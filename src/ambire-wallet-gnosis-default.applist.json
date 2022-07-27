@@ -49,6 +49,21 @@
         "ethereum",
         "polygon"
       ]
+    },
+    {
+      "id": "yearn.finance",
+      "url": "https://yearn.finance/",
+      "name": "Yearn Vaults",
+      "iconUrl": "https://cloudflare-ipfs.com/ipfs/Qme9HuPPhgCtgfj1CktvaDKhTesMueGCV2Kui1Sqna3Xs9/logo.svg",
+      "description": "Safe App for interacting with Yearn Vaults",
+      "iconPath": "logo.svg",
+      "providedBy": {
+        "name": "Yearn Finance",
+        "url": "https://yearn.finance"
+      },
+      "networks": [
+        1
+      ]
     }
   ]
 }
