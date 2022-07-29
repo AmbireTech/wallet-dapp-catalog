@@ -1,5 +1,6 @@
 import gnosisDefaultList from './gnosis-default.applist.json'
 import walletGnosisDefaultCatalog from './ambire-wallet-gnosis-default.applist.json'
+import walletWalletconnectDefaultCatalog from './ambire-wallet-walletconnect-default.applist.json'
 import { AmbireDappManifest, WalletConnectionType } from './types'
 import networks, { NetworkId } from './networks'
 
@@ -30,4 +31,15 @@ export function getWalletGnosisDefaultList(): AmbireDappManifest[] {
         }))
 
     return walletGnosisDapps
-} 
+}
+
+export function getWalletWalletconnectDefaultList(): AmbireDappManifest[] {
+    const walletGnosisDapps: AmbireDappManifest[] = walletWalletconnectDefaultCatalog.apps
+        .map(d => ({
+            ...d,
+            connectionType: WalletConnectionType.walletconnect,
+            networks: d.networks as NetworkId[]
+        }))
+
+    return walletGnosisDapps
+}

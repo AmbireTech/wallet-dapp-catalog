@@ -1,9 +1,10 @@
 import { AmbireDappManifest } from './src/types'
-import { getWalletGnosisDefaultList, getGnosisDefaultList } from './src/utils'
+import { getWalletGnosisDefaultList, getGnosisDefaultList, getWalletWalletconnectDefaultList } from './src/utils'
 
 function getWalletDappCatalog(): AmbireDappManifest[] {
     const dappCatalog = getWalletGnosisDefaultList()
         .concat(getGnosisDefaultList())
+        .concat(getWalletWalletconnectDefaultList())
 
     return dappCatalog
 }
