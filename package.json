@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "description": "Catalog of dApps integrated/featured in Ambire Wallet",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "ts-node ./build.ts"
   },
   "repository": {
     "type": "git",
@@ -14,5 +15,13 @@
   "bugs": {
     "url": "https://github.com/AmbireTech/wallet-dapp-catalog/issues"
   },
-  "homepage": "https://github.com/AmbireTech/wallet-dapp-catalog#readme"
+  "homepage": "https://github.com/AmbireTech/wallet-dapp-catalog#readme",
+  "devDependencies": {
+    "@types/node": "^18.7.4",
+    "ambire-common": "github:AmbireTech/ambire-common#8acd9b18f59ea614d38ee76a56bf6df8c08aefbf",
+    "mkdirp": "^1.0.4",
+    "ts-node": "^10.9.1",
+    "tslib": "^2.4.0",
+    "typescript": "^4.7.4"
+  }
 }
