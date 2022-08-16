@@ -1,3 +1,7 @@
+const gnosisDefaultList = require('./catalogs/gnosis-default.applist.json')
+const walletGnosisDefaultCatalog = require('./catalogs/ambire-wallet-gnosis-default.applist.json')
+const walletWalletconnectDefaultCatalog = require('./catalogs/ambire-wallet-walletconnect-default.applist.json')
+
 export enum NETWORKS {
     'ethereum' = 'ethereum',
     'polygon' = 'polygon',
@@ -192,4 +196,104 @@ const networks: NetworkType[] = [
     // }
 ]
 
-export default networks
+const fs = require('fs')
+const path = require('path')
+const mkdirp = require('mkdirp')
+
+enum WalletConnectionType {
+    'gnosis' = 'gnosis',
+    'walletconnect' = 'walletconnect'
+}
+
+enum SupportedWeb3Connectivity {
+    'gnosis' = 'gnosis',
+    'walletconnect' = 'walletconnect',
+    'injected' = 'injected'
+}
+
+type Web3ConnectivityId = keyof typeof SupportedWeb3Connectivity
+
+type AmbireDappManifest = {
+    id: string
+    name: string
+    description: string
+    url: string
+    iconUrl: string
+    iconPath?: string
+    connectionType: WalletConnectionType
+    providedBy?: {
+        name: string
+        url: string
+    }
+    networks: Array<NetworkId>,
+    web3Connectivity?: Array<Web3ConnectivityId>,
+    isWalletPlugin?: boolean,
+    featured?: boolean
+}
+
+const chainIdToWalletNetworkId = (chainId: number): NetworkId | null => {
+    return networks.find((n) => n.chainId === chainId)?.id || null
+}
+
+function getGnosisDefaultList(): Array<AmbireDappManifest> {
+    const asWalletDapps = gnosisDefaultList.apps.map((dapp: any) => {
+        const walletDapp = {
+            ...dapp,
+            connectionType: WalletConnectionType.gnosis,
+            networks: dapp.networks.map((n: number) => chainIdToWalletNetworkId(n)).filter((n: any) => !!n) as NetworkId[]
+        }
+
+        return walletDapp
+    })
+
+    return asWalletDapps
+}
+
+function getWalletGnosisDefaultList(): Array<AmbireDappManifest> {
+    const walletGnosisDapps: Array<AmbireDappManifest> = walletGnosisDefaultCatalog.apps
+        .map((d: any) => ({
+            ...d,
+            connectionType: WalletConnectionType.gnosis,
+            networks: d.networks as NetworkId[]
+        }))
+
+    return walletGnosisDapps
+}
+
+function getWalletWalletconnectDefaultList(): Array<AmbireDappManifest> {
+    const walletGnosisDapps: Array<AmbireDappManifest> = walletWalletconnectDefaultCatalog.apps
+        .map((d: any) => ({
+            ...d,
+            connectionType: WalletConnectionType.walletconnect,
+            networks: d.networks as NetworkId[]
+        }))
+
+    return walletGnosisDapps
+}
+
+function getWalletDappCatalog(): Array<AmbireDappManifest> {
+    const dappCatalog = getWalletGnosisDefaultList()
+        .concat(getGnosisDefaultList())
+        .concat(getWalletWalletconnectDefaultList())
+
+    return dappCatalog
+}
+
+const catalogs = JSON.stringify(getWalletDappCatalog())
+
+const fileDir = path.join(__dirname, '../', 'build')
+const filePath = path.join(fileDir, 'ambire-wallet-dapp-catalog.json')
+
+const writeFile = async () => {
+    try {
+        await mkdirp(fileDir)
+        await fs.writeFileSync(filePath, catalogs)
+        console.log('Catalog exported!')
+        process.exit(0)
+    } catch (err) {
+        console.error(err)
+        process.exit(1)
+    }
+}
+
+writeFile()
