@@ -1,45 +1,14 @@
 {
-  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "ambire-common/tsconfig.json",
+  "ts-node": {
+    "compilerOptions": {
+      "module": "commonjs"
+    }
+  },
   "compilerOptions": {
-    "noEmit": true,
-    "noEmitOnError": true,
-    "noEmitHelpers": true,
-    "lib": [
-      "ESNext"
-    ],
-    "target": "ESNext",
     "module": "commonjs",
-    "moduleResolution": "node",
-    "allowSyntheticDefaultImports": true,
-    "skipLibCheck": true,
-    "allowJs": true,
-    "checkJs": false,
-    "declaration": true,
-    "declarationMap": true,
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "forceConsistentCasingInFileNames": true,
-    "importHelpers": true,
-    "noFallthroughCasesInSwitch": true,
-    "inlineSources": true,
-    "noImplicitAny": true,
-    "noImplicitReturns": true,
-    "noImplicitThis": true,
-    "strictNullChecks": true,
-    "removeComments": false,
-    "sourceMap": true,
+    "noEmit": false,
     "esModuleInterop": true,
-    "isolatedModules": true,
-    "strict": true,
-    "strictPropertyInitialization": true,
-    "resolveJsonModule": true,
-    "outDir": "./dist",
-    "rootDir": "src"
-
   },
-  "paths": {
-    "ambire-common": ["node_modules/ambire-common"]
-  },
-  "include": ["src/**/*", "node_modules/ambire-common/**/*.ts"],
-  "exclude": ["node_modules"]
+  "include": ["src/*", "node_modules/ambire-common"],
 }
