@@ -54,7 +54,7 @@ function getWalletDappCatalog(): Array<AmbireDappManifest> {
 
 const catalogs = JSON.stringify(getWalletDappCatalog())
 
-const fileDir = path.join(__dirname, 'build')
+const fileDir = path.join( __dirname, '../', 'build')
 const filePath = path.join(fileDir, 'ambire-wallet-dapp-catalog.json')
 
 const writeFile = async () => {
