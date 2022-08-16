@@ -1,17 +1,17 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
   "ts-node": {
+    "transpileOnly": true,
     "compilerOptions": {
-      "module": "commonjs"
-    }
+      "module": "NodeNext"
+    },
+    "include": ["./src/**/*", "./node_modules/ambire-common/**/*"]
   },
   "compilerOptions": {
+    "module": "NodeNext",
     "noEmit": false,
     "noEmitOnError": true,
     "noEmitHelpers": true,
-    "lib": ["ESNext"],
-    "target": "ESNext",
-    "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
     "skipLibCheck": true,
     "allowJs": true,
@@ -36,6 +36,5 @@
     "strictPropertyInitialization": true,
     "resolveJsonModule": true
   },
-  "exclude": ["node_modules"],
   "include": ["src/**/*", "node_modules/ambire-common/**/*"]
 }
