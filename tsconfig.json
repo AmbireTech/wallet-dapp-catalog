@@ -6,7 +6,6 @@
     }
   },
   "compilerOptions": {
-    "baseUrl": ".",
     "noEmit": false,
     "noEmitOnError": true,
     "noEmitHelpers": true,
