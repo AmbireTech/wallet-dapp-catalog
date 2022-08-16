@@ -1,14 +1,13 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
   "compilerOptions": {
-    "baseUrl": "./",
-    "noEmit": false,
+    "noEmit": true,
     "noEmitOnError": true,
     "noEmitHelpers": true,
     "lib": [
       "ESNext"
     ],
-    "target": "es6",
+    "target": "ESNext",
     "module": "commonjs",
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
@@ -34,11 +33,13 @@
     "strict": true,
     "strictPropertyInitialization": true,
     "resolveJsonModule": true,
+    "outDir": "./dist",
+    "rootDir": "src"
+
   },
-  "ts-node": {
-    "compilerOptions": {
-      "module": "CommonJS"
-    }
+  "paths": {
+    "ambire-common": ["node_modules/ambire-common"]
   },
-  "include": ["node_modules/ambire-common/**/*", "./**/*"]
+  "include": ["src/**/*", "node_modules/ambire-common/**/*.ts"],
+  "exclude": ["node_modules"]
 }

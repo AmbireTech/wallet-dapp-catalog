@@ -2,7 +2,7 @@ const fs = require('fs')
 const path = require('path')
 const mkdirp = require('mkdirp')
 
-const { getWalletDappCatalog } = require('./index.ts')
+const { getWalletDappCatalog } = require('./dist/index.js')
 
 const catalogs = JSON.stringify(getWalletDappCatalog())
 
@@ -21,5 +21,3 @@ const writeFile = async () => {
 }
 
 writeFile()
-
-export { }
