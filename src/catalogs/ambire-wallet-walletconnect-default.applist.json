@@ -16,6 +16,22 @@
   ],
   "apps": [
     {
+      "id": "sudo-swap",
+      "url": "https://sudoswap.xyz/",
+      "name": "> sudo swap",
+      "iconUrl": "https://sudoswap.xyz/assets/img/logo-landing.svg",
+      "description": "The decentralized NFT marketplace",
+      "providedBy": {
+        "name": "Sudo Swap",
+        "url": "https://twitter.com/sudoswap"
+      },
+      "networks": [
+        "ethereum"
+      ],
+      "featured": true,
+      "forceInternal": true
+    },
+    {
       "id": "snapshot",
       "url": "https://snapshot.org/",
       "name": "Snapshot",
@@ -70,7 +86,7 @@
     },
     {
       "id": "evm_sigtools",
-      "url": "https://ambiretech.github.io/evm-sigtools-public/",
+      "url": "https://evm-sigtools.ambire.com/",
       "name": "EVM Sigtools",
       "iconUrl": "https://ambiretech.github.io/evm-sigtools-public/img/signature-validator-logo-flat.png",
       "description": "Sign, verify and share ethereum messages",

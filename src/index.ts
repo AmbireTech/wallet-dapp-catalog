@@ -226,9 +226,10 @@ type AmbireDappManifest = {
         url: string
     }
     networks: Array<NetworkId>,
-    web3Connectivity?: Array<Web3ConnectivityId>,
-    isWalletPlugin?: boolean,
+    web3Connectivity?: Array<Web3ConnectivityId>
+    isWalletPlugin?: boolean
     featured?: boolean
+    forceInternal?: boolean
 }
 
 const chainIdToWalletNetworkId = (chainId: number): NetworkId | null => {

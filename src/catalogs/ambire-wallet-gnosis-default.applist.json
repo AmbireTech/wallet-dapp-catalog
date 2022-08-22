@@ -23,7 +23,7 @@
       "description": "Lido is the liquid staking solution for Ethereum.",
       "providedBy": {
         "name": "Lido",
-        "url": "https://lido.fi/"
+        "url": "https://lido.fi/ethereum"
       },
       "networks": [
         "ethereum"
@@ -33,17 +33,62 @@
     {
       "id": "lido-polygon",
       "url": "https://polygon.lido.fi/",
-      "name": "Lido on Polygon",
+      "name": "Lido Polygon Staking",
       "iconUrl": "https://polygon.lido.fi/favicon-194x194.png",
       "description": "Stake your MATIC and receive stMATIC.",
       "providedBy": {
         "name": "Lido",
-        "url": "https://lido.fi/"
+        "url": "https://lido.fi/polygon"
       },
       "networks": [
         "ethereum"
       ],
       "featured": true
+    },
+    {
+      "id": "sushiswap",
+      "url": "https://app.sushi.com/",
+      "name": "SushiSwap",
+      "iconUrl": "https://app.sushi.com/icons/icon-96x96.png",
+      "description": "Swap, earn, stack yields, lend, borrow, leverage all on one decentralized, community driven platform. Welcome home to DeFi.",
+      "providedBy": {
+        "name": "Sushi Swap",
+        "url": "https://sushi.com/"
+      },
+      "networks": [
+        "ethereum",
+        "gnosis",
+        "polygon",
+        "moonriver",
+        "avalanche",
+        "arbitrum",
+        "fantom",
+        "moonbeam",
+        "optimism",
+        "binance-smart-chain"
+      ],
+      "featured": true,
+      "forceInternal": true
+    },
+    {
+      "id": "paraswap",
+      "url": "https://app.paraswap.io/",
+      "name": "ParaSwap",
+      "iconUrl": "https://app.paraswap.io/paraswap.svg",
+      "description": "ParaSwap allows dApps and traders to get the best DEX liquidity by aggregating multiple markets and offering the best rates",
+      "providedBy": {
+        "name": "ParaSwap",
+        "url": "https://app.paraswap.io"
+      },
+      "networks": [
+        "ethereum",
+        "polygon",
+        "avalanche",
+        "arbitrum",
+        "fantom",
+        "optimism",
+        "binance-smart-chain"
+      ]
     },
     {
       "id": "transaction_builder",
