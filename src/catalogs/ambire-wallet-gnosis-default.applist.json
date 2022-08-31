@@ -16,6 +16,33 @@
   ],
   "apps": [
     {
+      "id": "evm_sigtools",
+      "url": "https://evm-sigtools.ambire.com/",
+      "name": "EVM Sigtools",
+      "iconUrl": "https://ambiretech.github.io/evm-sigtools-public/img/signature-validator-logo-flat.png",
+      "description": "Sign, verify and share ethereum messages",
+      "iconPath": "/img/signature-validator-logo-flat.png",
+      "providedBy": {
+        "name": "Ambire",
+        "url": "https://www.ambire.com/"
+      },
+      "networks": [
+        "ethereum",
+        "polygon",
+        "avalanche",
+        "fantom",
+        "arbitrum",
+        "harmony",
+        "optimism",
+        "binance-smart-chain",
+        "gnosis",
+        "andromeda",
+        "rinkeby",
+        "cromos",
+        "aurora"
+      ]
+    },
+    {
       "id": "lido",
       "url": "https://stake.lido.fi/",
       "name": "Lido Staking Widget",
