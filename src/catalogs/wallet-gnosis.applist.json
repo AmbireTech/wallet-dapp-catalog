@@ -1,0 +1,18 @@
+{
+  "name": "Ambire Wallet - Gnosis apps list",
+  "timestamp": "2022-01-09T12:02:09.143Z",
+  "version": {
+    "major": 0,
+    "minor": 1,
+    "patch": 0
+  },
+  "logoUri": "logo-uri",
+  "keywords": [
+    "gnosis",
+    "safe",
+    "default",
+    "app",
+    "list"
+  ],
+  "apps": []
+}
