@@ -83,7 +83,7 @@ Check out Ambire Wallet here: https://wallet.ambire.com
 ![image](https://user-images.githubusercontent.com/10422618/187954712-18dc3906-a183-4305-88a2-d522a7fa1ec9.png)
 
 ### Creating dApp with `@gnosis.pm/safe-apps-react-sdk`
-- TODO:
+- Check our quick guide [here](/how-to-create-a-plugin.md)
 
 ### If yor dApp uses `@web3-onboard`
 - Using the official documentation of [@web3-onboard/gnosis](https://docs.blocknative.com/onboard/gnosis) will lead to some issues
@@ -106,4 +106,4 @@ const onboard = Onboard({
 const connectedWallets = await onboard.connectWallet()
 console.log(connectedWallets)
 ```
-- `@web3-onboard` nad `@web3-onboard` does not implement the expected behavior for Gnosis Safe App - connect directly first if safe app connection is detected. Fixing this can be achieved by calling on onboard `connect({ autoSelect: 'Gnosis Safe' })`. example of this can be found at 
+- `@web3-onboard` nad `@web3-onboard` does not implement the expected behavior for Gnosis Safe App - connect directly first if safe app connection is detected. Fixing this can be achieved by calling on onboard `connect({ autoSelect: 'Gnosis Safe' })`. example of this can be found here: https://github.com/AmbireTech/evm-sigtools/blob/7eb2c473de96b6428cefb027b5029d1f1b26abee/src/components/SignForm/SignForm.js#L95
