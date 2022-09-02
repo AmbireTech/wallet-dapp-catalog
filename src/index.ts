@@ -1,6 +1,8 @@
 const gnosisDefaultList = require('./catalogs/gnosis-default.applist.json')
 const walletGnosisDefaultCatalog = require('./catalogs/ambire-wallet-gnosis-default.applist.json')
-const walletWalletconnectDefaultCatalog = require('./catalogs/ambire-wallet-walletconnect-default.applist.json')
+const walletWalletConnectDefaultCatalog = require('./catalogs/ambire-wallet-walletconnect-default.applist.json')
+const walletWalletConnectCatalog = require('./catalogs/wallet-walletconnect.applist.json')
+const walletGnosisCatalog = require('./catalogs/wallet-gnosis.applist.json')
 
 export enum NETWORKS {
     'ethereum' = 'ethereum',
@@ -237,10 +239,24 @@ const chainIdToWalletNetworkId = (chainId: number): NetworkId | null => {
 }
 
 function getGnosisDefaultList(): Array<AmbireDappManifest> {
-    const asWalletDapps = gnosisDefaultList.apps.map((dapp: any) => {
+    const asWalletDapps = gnosisDefaultList.apps.concat(walletGnosisCatalog.apps).map((dapp: any) => {
         const walletDapp = {
             ...dapp,
             connectionType: WalletConnectionType.gnosis,
+            networks: dapp.networks.map((n: number) => chainIdToWalletNetworkId(n)).filter((n: any) => !!n) as NetworkId[]
+        }
+
+        return walletDapp
+    })
+
+    return asWalletDapps
+}
+
+function getWalletConnectDefaultList(): Array<AmbireDappManifest> {
+    const asWalletDapps = walletWalletConnectCatalog.apps.map((dapp: any) => {
+        const walletDapp = {
+            ...dapp,
+            connectionType: WalletConnectionType.walletconnect,
             networks: dapp.networks.map((n: number) => chainIdToWalletNetworkId(n)).filter((n: any) => !!n) as NetworkId[]
         }
 
@@ -262,7 +278,7 @@ function getWalletGnosisDefaultList(): Array<AmbireDappManifest> {
 }
 
 function getWalletWalletconnectDefaultList(): Array<AmbireDappManifest> {
-    const walletGnosisDapps: Array<AmbireDappManifest> = walletWalletconnectDefaultCatalog.apps
+    const walletGnosisDapps: Array<AmbireDappManifest> = walletWalletConnectDefaultCatalog.apps
         .map((d: any) => ({
             ...d,
             connectionType: WalletConnectionType.walletconnect,
@@ -276,6 +292,7 @@ function getWalletDappCatalog(): Array<AmbireDappManifest> {
     const dappCatalog = getWalletGnosisDefaultList()
         .concat(getGnosisDefaultList())
         .concat(getWalletWalletconnectDefaultList())
+        .concat(getWalletConnectDefaultList())
 
     return dappCatalog
 }
