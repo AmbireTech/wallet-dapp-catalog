@@ -73,7 +73,7 @@ Check out Ambire Wallet here: https://wallet.ambire.com
 - Remove `X-Frame-Options` from dApp headers if persist as this will prevent it to open in iframe
 
 ### Test yor dApp
-- You can run your plugin at this address: https://wallet.ambire.com/dappcatalog/#/wallet/dapps
+- You can run your plugin at this address: https://wallet.ambire.com/staging/#/wallet/dapps
 ![image](https://user-images.githubusercontent.com/10422618/187924428-291f8147-e9a4-4b5a-8caf-0612a317e2ab.png)
 
 - Go to 'ADD CUSTOM DAPP' and paste the link to URL field. If everything is correct with your dApp `manifest.json` all basic data should be loaded automatically

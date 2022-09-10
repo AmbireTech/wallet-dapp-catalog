@@ -19,9 +19,9 @@
       "id": "evm_sigtools",
       "url": "https://evm-sigtools.ambire.com/",
       "name": "EVM Sigtools",
-      "iconUrl": "https://ambiretech.github.io/evm-sigtools-public/img/signature-validator-logo-flat.png",
+      "iconUrl": "https://evm-sigtools.ambire.com/logo192.png",
       "description": "Sign, verify and share ethereum messages",
-      "iconPath": "/img/signature-validator-logo-flat.png",
+      "iconPath": "/logo192.png",
       "providedBy": {
         "name": "Ambire",
         "url": "https://www.ambire.com/"
