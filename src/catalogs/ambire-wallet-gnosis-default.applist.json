@@ -189,7 +189,8 @@
         "ethereum",
         "rikeby",
         "gnosis"
-      ]
+      ],
+      "featured": true
     },
     {
       "id": "balancer",
