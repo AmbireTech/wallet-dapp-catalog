@@ -32,6 +32,7 @@ Check out Ambire Wallet here: https://wallet.ambire.com
 
 ### dApp structure
 - It has to implement the requirement for [Gnosis Safe App](https://docs.gnosis-safe.io/build/sdks/safe-apps/get-started) (the dApp will connect Ambire Wallet automatically) or [WalletConnect](https://docs.walletconnect.com/quick-start/dapps/client) (requires user interaction for connecting to Ambire Wallet)
+- Quick guide how to Make dApp with `@gnosis.pm/safe-apps-react-sdk` and transaction batching transactions batching can be found [here](/how-to-create-a-plugin.md)
 
 ### PR
 - Make PR to this repo with your dApp data to corresponding .json file [Gnosis Safe App](/src/catalogs/wallet-gnosis.applist.json) / [WalletConnect](/src/catalogs/wallet-walletconnect.applist.json) in the following format:
@@ -62,9 +63,12 @@ Check out Ambire Wallet here: https://wallet.ambire.com
 {
     "name": "Some dApp name",
     "description": "Some awesome dApp description",
-    "iconPath": "someDappIcon.svg"
+    "iconPath": "someDappIcon.svg",
+    "networks": [1, 56, 250] 
 }
 ```
+
+  - `networks` field is not mandatory but will help to auto detect the supported networks if the dApp is as custom one from the Ambire Wallet interface.
 
 > Note: iconPath it's the public relative path where the Safe will try to load your app icon. For this example, it should be `https://dapp.someurl.com/someDappIcon.svg`.
 ### `CORS` and `X-Frame-Options`
@@ -81,9 +85,6 @@ Check out Ambire Wallet here: https://wallet.ambire.com
 
 - When added you can find the dApp in the list and test is:
 ![image](https://user-images.githubusercontent.com/10422618/187954712-18dc3906-a183-4305-88a2-d522a7fa1ec9.png)
-
-### Creating dApp with `@gnosis.pm/safe-apps-react-sdk`
-- Check our quick guide [here](/how-to-create-a-plugin.md)
 
 ### If yor dApp uses `@web3-onboard`
 - Using the official documentation of [@web3-onboard/gnosis](https://docs.blocknative.com/onboard/gnosis) will lead to some issues
