@@ -17,7 +17,7 @@ We are happy to announce a soft launch of our plugin system **integrated and dev
 We envision Ambire as the homepage of DeFi and this is why we created our plugin system. By adding your plugin to Ambire, you get the following benefits: 
 
 - Getting in on the ground floor: the plugin system will be officially launched in Q4 of 2022 but you get a chance to get in during our soft launch and join our early adopters inner circle. 
-- Tapping into the Ambire Wallet’s user base: we currently have 75,000 registered accounts and growing. 
+- Tapping into the Ambire Wallet’s user base: we currently have +85,000 registered accounts and growing. 
 - Marketing support: Our experienced marketing team will work with you to help promote the plugin and your participation in the Ambire ecosystem. 
 - Development support: Our extremely competent developers will be available to assist you should you encounter a roadblock.
 - Empower your users with excellent UX - they get to benefit from all of the fantastic features Ambire Wallet offers. 
@@ -86,7 +86,7 @@ Check out Ambire Wallet here: https://wallet.ambire.com
 - When added you can find the dApp in the list and test is:
 ![image](https://user-images.githubusercontent.com/10422618/187954712-18dc3906-a183-4305-88a2-d522a7fa1ec9.png)
 
-### If yor dApp uses `@web3-onboard`
+### If your dApp uses `@web3-onboard`
 - Using the official documentation of [@web3-onboard/gnosis](https://docs.blocknative.com/onboard/gnosis) will lead to some issues
 - by default it will not be able to connect via Gnosis Safe App sdk outside the Gnosis Safe itself. To fix this add `GnosisOptions` `{ whitelistedDomains: [/./] }` to `gnosisModule`. This will enable gnosis module to work on every domain:
 
