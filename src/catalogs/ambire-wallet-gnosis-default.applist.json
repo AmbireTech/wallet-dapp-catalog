@@ -218,6 +218,29 @@
         "ethereum",
         "optimism"
       ]
+    },
+    {
+      "id": "qidao",
+      "url": "https://app.mai.finance/",
+      "name": "QiDao Vaults",
+      "iconUrl": "https://app.mai.finance/images/android-chrome-512x512.png",
+      "description": "Borrow, save, trade without selling your crypto. Trusted by Polygon.",
+      "networks": [
+        "ethereum",
+        "gnosis",
+        "fantom",
+        "avalanche",
+        "harmony",
+        "polygon",
+        "optimism",
+        "moonbeam",
+        "aurora",
+        "binance-smart-chain"
+      ],
+      "providedBy": {
+        "name": "QiDao",
+        "url": "https://www.mai.finance/"
+      }
     }
   ]
 }
