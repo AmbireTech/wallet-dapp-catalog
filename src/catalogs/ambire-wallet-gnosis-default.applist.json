@@ -205,6 +205,25 @@
       ]
     },
     {
+      "id": "hopprotocol",
+      "url": "https://app.hop.exchange/",
+      "name": "Hop Protocol",
+      "iconUrl": "https://app.hop.exchange/images/hop_logo.png",
+      "description": "Hop is a scalable rollup-to-rollup general token bridge. It allows users to send tokens from one rollup or sidechain to another almost immediately without having to wait for network challenge periods.",
+      "networks": [
+        "ethereum",
+        "gnosis",
+        "polygon",
+        "optimism",
+        "arbitrum"
+      ],
+      "providedBy": {
+        "name": "Hop Protocol",
+        "url": "https://hop.exchange/"
+      },
+      "featured": true
+    },
+    {
       "id": "aelin",
       "url": "https://app.aelin.xyz/",
       "name": "Aelin",
