@@ -260,6 +260,20 @@
         "name": "QiDao",
         "url": "https://www.mai.finance/"
       }
+    },
+    {
+      "id": "kewenta",
+      "url": "https://kwenta.io/market/",
+      "name": "Kwenta",
+      "iconUrl": "https://kwenta.io/images/favicon.svg",
+      "description": "Gain exposure to cryptocurrencies, forex, indices, and commodities on Ethereum with zero slippage.",
+      "networks": [
+        "ethereum"
+      ],
+      "providedBy": {
+        "name": "Kwenta",
+        "url": "https://kwenta.io/"
+      }
     }
   ]
 }
