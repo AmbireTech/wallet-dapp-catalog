@@ -132,6 +132,115 @@
       "networks": [
         "ethereum"
       ]
+    },
+    {
+      "id": "loopring",
+      "url": "https://loopring.io/",
+      "name": "Loopring L2",
+      "iconUrl": "https://loopring.io/favicon.ico",
+      "description": "Ethereum’s First zkRollup Layer 2",
+      "networks": [
+        "ethereum"
+      ],
+      "providedBy": {
+        "name": "Loopring",
+        "url": "https://twitter.com/loopringorg"
+      }
+    },
+    {
+      "id": "spookyswap",
+      "url": "https://spooky.fi/",
+      "name": "SpookySwap",
+      "iconUrl": "https://spooky.fi/favicon.ico",
+      "description": "Farm BOO with Spooky LP Tokens",
+      "networks": [
+        "ethereum",
+        "binance-smart-chain",
+        "polygon",
+        "arbitrum",
+        "avalanche",
+        "cronos",
+        "harmony"
+      ],
+      "providedBy": {
+        "name": "SpookySwap",
+        "url": "https://spooky.fi/"
+      }
+    },
+    {
+      "id": "curve",
+      "url": "https://curve.fi/",
+      "name": "Curve",
+      "iconUrl": "https://curve.fi/logo-square.svg",
+      "description": "Decentralized exchange liquidity pool designed for extremely efficient stablecoin trading and low-risk income for liquidity providers",
+      "networks": [
+        "ethereum",
+        "gnosis",
+        "fantom",
+        "avalanche",
+        "harmony",
+        "polygon",
+        "optimism",
+        "moonbeam",
+        "aurora"
+      ],
+      "providedBy": {
+        "name": "Curve",
+        "url": "https://curve.fi/"
+      }
+    },
+    {
+      "id": "looksrare",
+      "url": "https://looksrare.org/",
+      "name": "LooksRare",
+      "iconUrl": "https://looksrare.org/android-chrome-192x192.png",
+      "description": "Buy & Sell NFTs, Get Rewards",
+      "networks": [
+        "ethereum"
+      ],
+      "providedBy": {
+        "name": "LooksRare",
+        "url": "https://looksrare.org/"
+      }
+    },
+    {
+      "id": "synapseprotocol",
+      "url": "https://synapseprotocol.com/",
+      "name": "Synapse Protocol",
+      "iconUrl": "https://synapseprotocol.com/favicon.ico",
+      "description": "Buy & Sell NFTs, Get Rewards",
+      "networks": [
+        "arbitrrum",
+        "avalanche",
+        "binance-smart-chain",
+        "optimism",
+        "polygon",
+        "aurora",
+        "cronos",
+        "fantom",
+        "harmony",
+        "aurora",
+        "moonbeam",
+        "moonriver"
+      ],
+      "providedBy": {
+        "name": "Synapse Protocol",
+        "url": "https://synapseprotocol.com/"
+      }
+    },
+    {
+      "id": "dexguru",
+      "url": "https://dex.guru/",
+      "name": "Dex Guru",
+      "iconUrl": "https://dex.guru/logo-circle.png",
+      "description": "DexGuru gives you unparalleled coverage of on-chain markets integrated into one place and delivered in real-time.",
+      "networks": [
+        "arbitrrum"
+      ],
+      "providedBy": {
+        "name": "Dex Guru",
+        "url": "https://dex.guru/"
+      }
     }
   ]
 }

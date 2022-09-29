@@ -205,6 +205,25 @@
       ]
     },
     {
+      "id": "hopprotocol",
+      "url": "https://app.hop.exchange/",
+      "name": "Hop Protocol",
+      "iconUrl": "https://app.hop.exchange/images/hop_logo.png",
+      "description": "Hop is a scalable rollup-to-rollup general token bridge. It allows users to send tokens from one rollup or sidechain to another almost immediately without having to wait for network challenge periods.",
+      "networks": [
+        "ethereum",
+        "gnosis",
+        "polygon",
+        "optimism",
+        "arbitrum"
+      ],
+      "providedBy": {
+        "name": "Hop Protocol",
+        "url": "https://hop.exchange/"
+      },
+      "featured": true
+    },
+    {
       "id": "aelin",
       "url": "https://app.aelin.xyz/",
       "name": "Aelin",
@@ -218,6 +237,43 @@
         "ethereum",
         "optimism"
       ]
+    },
+    {
+      "id": "qidao",
+      "url": "https://app.mai.finance/",
+      "name": "QiDao Vaults",
+      "iconUrl": "https://app.mai.finance/images/android-chrome-512x512.png",
+      "description": "Borrow, save, trade without selling your crypto. Trusted by Polygon.",
+      "networks": [
+        "ethereum",
+        "gnosis",
+        "fantom",
+        "avalanche",
+        "harmony",
+        "polygon",
+        "optimism",
+        "moonbeam",
+        "aurora",
+        "binance-smart-chain"
+      ],
+      "providedBy": {
+        "name": "QiDao",
+        "url": "https://www.mai.finance/"
+      }
+    },
+    {
+      "id": "kewenta",
+      "url": "https://kwenta.io/market/",
+      "name": "Kwenta",
+      "iconUrl": "https://kwenta.io/images/favicon.svg",
+      "description": "Gain exposure to cryptocurrencies, forex, indices, and commodities on Ethereum with zero slippage.",
+      "networks": [
+        "ethereum"
+      ],
+      "providedBy": {
+        "name": "Kwenta",
+        "url": "https://kwenta.io/"
+      }
     }
   ]
 }

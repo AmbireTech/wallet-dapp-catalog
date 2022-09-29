@@ -1,0 +1,37 @@
+name: Build & deploy
+
+on:
+  push:
+    branches:
+      - development
+permissions:
+  contents: write
+jobs:
+  build_and_deploy:
+    name: Build and Deploy Dapp Catalog staging
+    runs-on: ubuntu-latest
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }} 
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+    
+    - name: Install Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: 16.x
+    
+    - name: Install NPM packages
+      run: npm ci
+    
+    - name: Build project
+      run: npm run build
+
+    - name: Deploy to gh-pages
+      if: github.ref == 'refs/heads/development'
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./build
+        destination_dir: ./staging
+        cname: dappcatalog.ambire.com
