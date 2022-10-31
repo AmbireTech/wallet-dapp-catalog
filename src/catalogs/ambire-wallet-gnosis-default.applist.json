@@ -43,6 +43,24 @@
       ]
     },
     {
+      "id": "swappin.gifts",
+      "url": "https://app.swappin.gifts/ref/ambire",
+      "name": "swappin.gifts",
+      "iconUrl": "https://app.swappin.gifts/ref/ambire/logo.svg",
+      "description": "swappin.gifts Web3 DApp - convert your crypto assets into real-world goods & services",
+      "providedBy": {
+        "name": "swappin.gifts",
+        "url": "https://swappin.gifts/"
+      },
+      "networks": [
+        "ethereum",
+        "polygon",
+        "avalanche",
+        "binance-smart-chain"
+      ],
+      "featured": true
+    },
+    {
       "id": "lido",
       "url": "https://stake.lido.fi/",
       "name": "Lido Staking Widget",
