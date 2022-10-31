@@ -43,6 +43,24 @@
       ]
     },
     {
+      "id": "swappin.gifts",
+      "url": "https://app.swappin.gifts/ref/ambire",
+      "name": "swappin.gifts",
+      "iconUrl": "https://app.swappin.gifts/ref/ambire/logo.svg",
+      "description": "swappin.gifts Web3 DApp - convert your crypto assets into real-world goods & services",
+      "providedBy": {
+        "name": "swappin.gifts",
+        "url": "https://swappin.gifts/"
+      },
+      "networks": [
+        "ethereum",
+        "polygon",
+        "avalanche",
+        "binance-smart-chain"
+      ],
+      "featured": true
+    },
+    {
       "id": "lido",
       "url": "https://stake.lido.fi/",
       "name": "Lido Staking Widget",
@@ -274,24 +292,6 @@
         "name": "Kwenta",
         "url": "https://kwenta.io/"
       }
-    },
-    {
-      "id": "swappin.gifts",
-      "url": "https://app.swappin.gifts/ref/ambire",
-      "name": "swappin.gifts",
-      "iconUrl": "https://app.swappin.gifts/ref/ambire/android-chrome-192x192.png?v=2504222",
-      "description": "swappin.gifts Web3 DApp - convert your crypto assets into real-world goods & services",
-      "networks": [
-        "ethereum",
-        "polygon",
-        "binance-smart-chain",
-        "avalanche"
-      ],
-      "providedBy": {
-        "name": "swappin.gifts",
-        "url": "https://swappin.gifts/"
-      },
-      "featured": true
     }
   ]
 }
