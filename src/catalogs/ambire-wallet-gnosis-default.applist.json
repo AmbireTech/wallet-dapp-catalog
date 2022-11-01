@@ -38,15 +38,12 @@
         "gnosis",
         "andromeda",
         "rinkeby",
-        "celo",
-        "aurora",
-        "celo_alfajores",
-        "arbitrum_rinkeby",
-        "binance",
         "moonbeam",
         "moonriver",
-        "kucoin"
-
+        "kucoin",
+        "cronos",
+        "ethereum-pow",
+        "aurora"
       ]
     },
     {
