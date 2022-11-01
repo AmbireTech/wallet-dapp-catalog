@@ -16,10 +16,10 @@
   ],
   "apps": [
     {
-      "id": "evm_sigtools",
-      "url": "https://evm-sigtools.ambire.com/",
-      "name": "EVM Sigtools",
-      "iconUrl": "https://evm-sigtools.ambire.com/logo192.png",
+      "id": "sigtool_for_evm",
+      "url": "https://sigtool.ambire.com/",
+      "name": "SigTool for EVM",
+      "iconUrl": "https://sigtool.ambire.com/logo192.png",
       "description": "Sign, verify and share ethereum messages",
       "iconPath": "/logo192.png",
       "providedBy": {
@@ -38,8 +38,15 @@
         "gnosis",
         "andromeda",
         "rinkeby",
-        "cromos",
-        "aurora"
+        "celo",
+        "aurora",
+        "celo_alfajores",
+        "arbitrum_rinkeby",
+        "binance",
+        "moonbeam",
+        "moonriver",
+        "kucoin"
+
       ]
     },
     {
