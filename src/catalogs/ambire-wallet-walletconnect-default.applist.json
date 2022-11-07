@@ -127,7 +127,7 @@
       "id": "decentraland",
       "url": "https://play.decentraland.org/",
       "name": "Decentraland",
-      "iconUrl": "https://pbs.twimg.com/profile_images/1543925627866292226/Mso2vb1l_bigger.jpg",
+      "iconUrl": "https://decentraland.org/favicon.svg",
       "description": "Create, explore and trade in the first-ever virtual world owned by its users.",
       "networks": [
         "ethereum"
