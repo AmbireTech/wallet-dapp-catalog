@@ -14,5 +14,26 @@
     "app",
     "list"
   ],
-  "apps": []
+  "apps": [
+    {
+      "url": "https://exolix.com/exchange-ambire-wallet",
+      "name": "Exolix",
+      "iconUrl": "https://exolix.com/favicon/android-chrome-512x512.png",
+      "description": "Best instantly cryptocurrency coin exchange. Lowest fees and best rates for BTC, ETH, ADA, XRP and 400+ more coins. Swap crypto with Exolix exchange platform.",
+      "networks": [
+        1,
+        10,
+        56,
+        100,
+        137,
+        250,
+        321,
+        1088,
+        1284,
+        1285,
+        42161,
+        43114
+      ]
+    }
+  ]
 }
