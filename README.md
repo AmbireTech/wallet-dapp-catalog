@@ -16,7 +16,7 @@ We are happy to announce a soft launch of our plugin system **integrated and dev
 
 We envision Ambire as the homepage of DeFi and this is why we created our plugin system. By adding your plugin to Ambire, you get the following benefits: 
 
-- Getting in on the ground floor: the plugin system will be officially launched in Q4 of 2022 but you get a chance to get in during our soft launch and join our early adopters inner circle. 
+- Getting in on the ground floor: the plugin system was officially launched in Q4 of 2022 so you get a chance to join our early adopters inner circle. 
 - Tapping into the Ambire Wallet’s user base: we currently have +85,000 registered accounts and growing. 
 - Marketing support: Our experienced marketing team will work with you to help promote the plugin and your participation in the Ambire ecosystem. 
 - Development support: Our extremely competent developers will be available to assist you should you encounter a roadblock.
@@ -83,7 +83,7 @@ Check out Ambire Wallet here: https://wallet.ambire.com
 - Go to 'ADD CUSTOM DAPP' and paste the link to URL field. If everything is correct with your dApp `manifest.json` all basic data should be loaded automatically
 ![image](https://user-images.githubusercontent.com/10422618/187926581-5b14b28c-9ec2-4008-9a22-0f6b1527b949.png)
 
-- When added you can find the dApp in the list and test is:
+- When added you can find the dApp in the list and test it:
 ![image](https://user-images.githubusercontent.com/10422618/187954712-18dc3906-a183-4305-88a2-d522a7fa1ec9.png)
 
 ### If your dApp uses `@web3-onboard`
