@@ -78,13 +78,13 @@ Check out Ambire Wallet here: https://wallet.ambire.com
 
 ### Test yor dApp
 - You can run your plugin at this address: https://wallet.ambire.com/staging/#/wallet/dapps
-![image](https://user-images.githubusercontent.com/10422618/187924428-291f8147-e9a4-4b5a-8caf-0612a317e2ab.png)
+![Ambire Wallet dApp catalog](https://user-images.githubusercontent.com/83211172/217004217-fbf637cf-581e-4c34-9fcc-a6bb3e554dcc.png)
 
 - Go to 'ADD CUSTOM DAPP' and paste the link to URL field. If everything is correct with your dApp `manifest.json` all basic data should be loaded automatically
-![image](https://user-images.githubusercontent.com/10422618/187926581-5b14b28c-9ec2-4008-9a22-0f6b1527b949.png)
+![Ambire Wallet dApp catalog adding dApp](https://user-images.githubusercontent.com/83211172/217004256-624aee04-d66f-4dd4-a1c8-738347237d08.png)
 
 - When added you can find the dApp in the list and test it:
-![image](https://user-images.githubusercontent.com/10422618/187954712-18dc3906-a183-4305-88a2-d522a7fa1ec9.png)
+![Ambire Wallet dApp catalog using dApp](https://user-images.githubusercontent.com/83211172/217004295-8094f1e8-80b0-47d2-b314-0368c56fe2a7.png)
 
 ### If your dApp uses `@web3-onboard`
 - Using the official documentation of [@web3-onboard/gnosis](https://docs.blocknative.com/onboard/gnosis) will lead to some issues
