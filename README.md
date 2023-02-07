@@ -9,16 +9,16 @@ _Basic Intro Guide_
 
 It brings to the table a number of innovative features like human-friendly transaction parsing, simplifying ERC20 approvals, hardware wallet support and much more. It’s also a smart wallet, enabling features like multiple signers, social recovery, transaction batching, gas abstractions and others.
 
-We are happy to announce a soft launch of our plugin system **integrated and developed on the Gnosis protocol** (Safe App).
+We are happy to announce a soft launch of our dApp catalog system **integrated and developed on the Gnosis protocol** (Safe App).
 
 
-## Why should you build an Ambire Wallet plugin
+## Why should you place your dApp in the Ambire Wallet dApp catalog
 
-We envision Ambire as the homepage of DeFi and this is why we created our plugin system. By adding your plugin to Ambire, you get the following benefits: 
+We envision Ambire as the homepage of Web3 and this is why we created our dApp catalog system. By adding your dApp to Ambire, you get the following benefits: 
 
-- Getting in on the ground floor: the plugin system was officially launched in Q4 of 2022 so you get a chance to join our early adopters inner circle. 
-- Tapping into the Ambire Wallet’s user base: we currently have +85,000 registered accounts and growing. 
-- Marketing support: Our experienced marketing team will work with you to help promote the plugin and your participation in the Ambire ecosystem. 
+- Getting in on the ground floor: the dApp catalog system was officially launched in Q4 of 2022 so you get a chance to join our early adopters inner circle. 
+- Tapping into the Ambire Wallet’s user base: we currently have 95,000+ registered accounts and growing. 
+- Marketing support: Our experienced marketing team will work with you to help promote the dApp and your participation in the Ambire ecosystem. 
 - Development support: Our extremely competent developers will be available to assist you should you encounter a roadblock.
 - Empower your users with excellent UX - they get to benefit from all of the fantastic features Ambire Wallet offers. 
 
@@ -77,7 +77,7 @@ Check out Ambire Wallet here: https://wallet.ambire.com
 - Remove `X-Frame-Options` from dApp headers if persist as this will prevent it to open in iframe
 
 ### Test yor dApp
-- You can run your plugin at this address: https://wallet.ambire.com/staging/#/wallet/dapps
+- You can run your dApp at this address: https://wallet.ambire.com/staging/#/wallet/dapps
 ![Ambire Wallet dApp catalog](https://user-images.githubusercontent.com/83211172/217004217-fbf637cf-581e-4c34-9fcc-a6bb3e554dcc.png)
 
 - Go to 'ADD CUSTOM DAPP' and paste the link to URL field. If everything is correct with your dApp `manifest.json` all basic data should be loaded automatically
