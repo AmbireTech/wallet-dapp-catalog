@@ -154,13 +154,7 @@
       "iconUrl": "https://spooky.fi/favicon.ico",
       "description": "Farm BOO with Spooky LP Tokens",
       "networks": [
-        "ethereum",
-        "binance-smart-chain",
-        "polygon",
-        "arbitrum",
-        "avalanche",
-        "cronos",
-        "harmony"
+        "fantom"
       ],
       "providedBy": {
         "name": "SpookySwap",
