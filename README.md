@@ -3,13 +3,11 @@ Catalog of dApps integrated/featured in Ambire Wallet
 ---
 
 
-_Basic Intro Guide_
+[Ambire](https://www.ambire.com/) is a Web3 wallet that makes crypto self-custody easy and secure for everyone.
 
-[Ambire](https://www.ambire.com/) is a next-generation open-source Web3 wallet focused on DeFi and the EVM ecosystem.
+It brings to the table a number of innovative features like human-friendly transaction visualization, simplifying ERC20 approvals, hardware wallet support and much more. It’s also a smart wallet (account abstraction wallet), enabling features like multiple signers, social recovery, transaction batching, gas abstraction and others.
 
-It brings to the table a number of innovative features like human-friendly transaction parsing, simplifying ERC20 approvals, hardware wallet support and much more. It’s also a smart wallet, enabling features like multiple signers, social recovery, transaction batching, gas abstractions and others.
-
-We are happy to announce a soft launch of our dApp catalog system **integrated and developed on the Gnosis protocol** (Safe App).
+We are happy to announce a soft launch of our dApp catalog system **integrated and developed on the Gnosis protocol**.
 
 
 ## Why should you place your dApp in the Ambire Wallet dApp catalog
@@ -92,7 +90,7 @@ Using the official documentation of [@web3-onboard/gnosis](https://docs.blocknat
 
 - By default your dApp will not be able to connect via Gnosis Safe App SDK outside the Gnosis Safe itself. To fix this add `GnosisOptions` `{ whitelistedDomains: [/./] }` to `gnosisModule`. This will enable gnosis module to work on every domain:
 
-```
+```javascript
 import Onboard from '@web3-onboard/core'
 import gnosisModule from '@web3-onboard/gnosis'
 
