@@ -28,11 +28,12 @@ Check out Ambire Wallet here: https://wallet.ambire.com
 
 # How to add your dApp to Ambire Wallet dApp Catalog
 
-## Your dApp should follow few simple rule:
+## Your dApp should follow few simple rules:
 
 ### dApp structure
-- It has to implement the requirement for [Gnosis Safe App](https://docs.gnosis-safe.io/build/sdks/safe-apps/get-started) (the dApp will connect Ambire Wallet automatically) or [WalletConnect](https://docs.walletconnect.com/quick-start/dapps/client) (requires user interaction for connecting to Ambire Wallet)
-- Quick guide how to Make dApp with `@gnosis.pm/safe-apps-react-sdk` and transaction batching transactions batching can be found [here](/how-to-create-a-plugin.md)
+- It has to implement the requirements for [Gnosis Safe App](https://docs.gnosis-safe.io/build/sdks/safe-apps/get-started) (the dApp will connect Ambire Wallet automatically) or [WalletConnect](https://docs.walletconnect.com/quick-start/dapps/client) (requires user interaction for connecting to Ambire Wallet)
+   - we recommend using the Gnosis Safe App protocol via `@gnosis.pm/safe-apps-react-sdk` 
+   - to implement Ambire-specific transaction batching, read [this](/how-to-create-a-plugin.md)
 
 ### PR
 - Make PR to this repo with your dApp data to corresponding .json file [Gnosis Safe App](/src/catalogs/wallet-gnosis.applist.json) / [WalletConnect](/src/catalogs/wallet-walletconnect.applist.json) in the following format:
@@ -55,7 +56,7 @@ Check out Ambire Wallet here: https://wallet.ambire.com
 ## Extra tips:
 
 ### Networks
-- Currently supported network ids by Ambire Wallet are [1, 137, 43114, 56, 250, 1284, 1285, 42161, 100, 321, 10, 1088, 4, 25, 1313161554] and more in the future.
+- Currently supported chainIds by Ambire Wallet are `[1, 137, 43114, 56, 250, 1284, 1285, 42161, 100, 321, 10, 1088, 4, 25, 1313161554]` and more in the future.
 
 ### Manifest
 - Make sure your app exposes a `manifest.json` file in the root dir with this structure:
@@ -68,7 +69,7 @@ Check out Ambire Wallet here: https://wallet.ambire.com
 }
 ```
 
-  - `networks` field is not mandatory but will help to auto detect the supported networks if the dApp is as custom one from the Ambire Wallet interface.
+  - `networks` field is not mandatory but it will help to auto-detect the supported networks if the dApp is added as a custom dApp from the wallet UI
 
 > Note: iconPath it's the public relative path where the Safe will try to load your app icon. For this example, it should be `https://dapp.someurl.com/someDappIcon.svg`.
 ### `CORS` and `X-Frame-Options`
@@ -87,8 +88,9 @@ Check out Ambire Wallet here: https://wallet.ambire.com
 ![Ambire Wallet dApp catalog using dApp](https://user-images.githubusercontent.com/83211172/217004295-8094f1e8-80b0-47d2-b314-0368c56fe2a7.png)
 
 ### If your dApp uses `@web3-onboard`
-- Using the official documentation of [@web3-onboard/gnosis](https://docs.blocknative.com/onboard/gnosis) will lead to some issues
-- by default it will not be able to connect via Gnosis Safe App sdk outside the Gnosis Safe itself. To fix this add `GnosisOptions` `{ whitelistedDomains: [/./] }` to `gnosisModule`. This will enable gnosis module to work on every domain:
+Using the official documentation of [@web3-onboard/gnosis](https://docs.blocknative.com/onboard/gnosis) will lead to some issues that you need to solve:
+
+- By default your dApp will not be able to connect via Gnosis Safe App SDK outside the Gnosis Safe itself. To fix this add `GnosisOptions` `{ whitelistedDomains: [/./] }` to `gnosisModule`. This will enable gnosis module to work on every domain:
 
 ```
 import Onboard from '@web3-onboard/core'
@@ -107,4 +109,4 @@ const onboard = Onboard({
 const connectedWallets = await onboard.connectWallet()
 console.log(connectedWallets)
 ```
-- `@web3-onboard` nad `@web3-onboard` does not implement the expected behavior for Gnosis Safe App - connect directly first if safe app connection is detected. Fixing this can be achieved by calling on onboard `connect({ autoSelect: 'Gnosis Safe' })`. example of this can be found here: https://github.com/AmbireTech/evm-sigtools/blob/7eb2c473de96b6428cefb027b5029d1f1b26abee/src/components/SignForm/SignForm.js#L95
+- `@web3-onboard` and `@web3-onboard` do not implement the expected behavior for Gnosis Safe App, which is to connect directly first if  possible. Fixing this can be achieved by calling on onboard `connect({ autoSelect: 'Gnosis Safe' })`. An example of this can be found here: https://github.com/AmbireTech/evm-sigtools/blob/7eb2c473de96b6428cefb027b5029d1f1b26abee/src/components/SignForm/SignForm.js#L95
