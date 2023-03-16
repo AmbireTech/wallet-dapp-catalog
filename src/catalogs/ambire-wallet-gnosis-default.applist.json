@@ -174,7 +174,8 @@
         "polygon",
         "optimism",
         "arbitrum",
-        "celo"
+        "celo",
+        "binance-smart-chain"
       ]
     },
     {
