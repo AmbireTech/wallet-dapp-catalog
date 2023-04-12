@@ -14,5 +14,15 @@
     "app",
     "list"
   ],
-  "apps": []
+  "apps": [
+    {
+      "url": "https://verse.bitcoin.com/",
+      "name": "Verse DEX",
+      "iconUrl": "https://verse.bitcoin.com/icons/verse-icon-512x512.png",
+      "description": "Bitcoin.com's multichain Verse DEX aims to bring everyone permissionless and non-custodial trading access, with a special focus on newcomers to DeFi. ",
+      "networks": [
+        1
+      ]
+    }
+  ]
 }
