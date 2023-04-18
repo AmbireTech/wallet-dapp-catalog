@@ -16,6 +16,7 @@
   ],
   "apps": [
     {
+      "id": "exolix",
       "url": "https://exolix.com/exchange-ambire-wallet",
       "name": "Exolix",
       "iconUrl": "https://exolix.com/favicon/android-chrome-512x512.png",
@@ -36,7 +37,7 @@
       ]
     },
     {
-      "id": "{\"url\":\"https://revoke.cash\",\"name\":\"Revoke.cash\"}",
+      "id": "revoke.cash",
       "url": "https://revoke.cash/",
       "name": "Revoke.cash",
       "iconUrl": "https://revoke.cash/assets/images/android-chrome-512x512.png",
