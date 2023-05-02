@@ -120,6 +120,34 @@
       "forceInternal": true
     },
     {
+      "id": "nfts2me",
+      "url": "https://nfts2me.com/",
+      "name": "NFTs2Me",
+      "iconUrl": "https://nfts2me.com/assets/images/logo.svg",
+      "description": "Multichain user-friendly comprehensive platform to create, deploy and manage your NFT collection and community, 100% free with advanced functionalities.",
+      "providedBy": {
+        "name": "NFTs2Me",
+        "url": "https://nfts2me.com/"
+      },
+      "networks": [
+        "ethereum",
+        "gnosis",
+        "polygon",
+        "avalanche",
+        "fantom",
+        "arbitrum",
+        "optimism",
+        "binance-smart-chain",
+        "gnosis",
+        "moonbeam",
+        "cronos",
+        "polygon-zkevm",
+        "zksync-era"
+      ],
+      "featured": true,
+      "forceInternal": true
+    },
+    {
       "id": "paraswap",
       "url": "https://app.paraswap.io/",
       "name": "ParaSwap",

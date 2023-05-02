@@ -15,5 +15,40 @@
       "app",
       "list"
     ],
-    "apps": []
+    "apps": [
+      {
+        "id": "nfts2me",
+        "url": "https://nfts2me.com/",
+        "name": "NFTs2Me",
+        "iconUrl": "https://nfts2me.com/assets/images/logo.svg",
+        "description": "Multichain user-friendly comprehensive platform to create, deploy and manage your NFT collection and community, 100% free with advanced functionalities.",
+        "providedBy": {
+          "name": "NFTs2Me",
+          "url": "https://nfts2me.com/"
+        },
+        "networks": [
+          1,
+          5,
+          10,
+          56, 
+          100,
+          137,
+          250,
+          324,
+          1101,
+          1284,
+          2368,
+          7700, 
+          8217,
+          42161, 
+          43114,
+          59140,
+          80001,
+          84531,
+          534353        
+        ],
+        "featured": true,
+        "forceInternal": true
+      }
+    ]
   }
