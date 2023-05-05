@@ -213,6 +213,11 @@ enum SupportedWeb3Connectivity {
     'injected' = 'injected'
 }
 
+enum DeviceCompatability {
+    'mobile' = 'mobile',
+    'web' = 'web',
+}
+
 type Web3ConnectivityId = keyof typeof SupportedWeb3Connectivity
 
 type AmbireDappManifest = {
@@ -243,7 +248,8 @@ function getGnosisDefaultList(): Array<AmbireDappManifest> {
         const walletDapp = {
             ...dapp,
             connectionType: WalletConnectionType.gnosis,
-            networks: dapp.networks.map((n: number) => chainIdToWalletNetworkId(n)).filter((n: any) => !!n) as NetworkId[]
+            networks: dapp.networks.map((n: number) => chainIdToWalletNetworkId(n)).filter((n: any) => !!n) as NetworkId[],
+            device: [DeviceCompatability.web]
         }
 
         return walletDapp
@@ -257,7 +263,9 @@ function getWalletConnectDefaultList(): Array<AmbireDappManifest> {
         const walletDapp = {
             ...dapp,
             connectionType: WalletConnectionType.walletconnect,
-            networks: dapp.networks.map((n: number) => chainIdToWalletNetworkId(n)).filter((n: any) => !!n) as NetworkId[]
+            networks: dapp.networks.map((n: number) => chainIdToWalletNetworkId(n)).filter((n: any) => !!n) as NetworkId[],
+            device: [DeviceCompatability.mobile]
+
         }
 
         return walletDapp
@@ -271,7 +279,8 @@ function getWalletGnosisDefaultList(): Array<AmbireDappManifest> {
         .map((d: any) => ({
             ...d,
             connectionType: WalletConnectionType.gnosis,
-            networks: d.networks as NetworkId[]
+            networks: d.networks as NetworkId[],
+            device: [DeviceCompatability.web]
         }))
 
     return walletGnosisDapps
@@ -282,7 +291,8 @@ function getWalletWalletconnectDefaultList(): Array<AmbireDappManifest> {
         .map((d: any) => ({
             ...d,
             connectionType: WalletConnectionType.walletconnect,
-            networks: d.networks as NetworkId[]
+            networks: d.networks as NetworkId[],
+            device: [DeviceCompatability.mobile]
         }))
 
     return walletGnosisDapps
