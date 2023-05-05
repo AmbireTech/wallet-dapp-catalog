@@ -3,6 +3,7 @@ const walletGnosisDefaultCatalog = require('./catalogs/ambire-wallet-gnosis-defa
 const walletWalletConnectDefaultCatalog = require('./catalogs/ambire-wallet-walletconnect-default.applist.json')
 const walletWalletConnectCatalog = require('./catalogs/wallet-walletconnect.applist.json')
 const walletGnosisCatalog = require('./catalogs/wallet-gnosis.applist.json')
+const fullCatalog = require('./catalogs/ambire.applist.json')
 
 export enum NETWORKS {
     'ethereum' = 'ethereum',
@@ -213,11 +214,6 @@ enum SupportedWeb3Connectivity {
     'injected' = 'injected'
 }
 
-enum DeviceCompatability {
-    'mobile' = 'mobile',
-    'web' = 'web',
-}
-
 type Web3ConnectivityId = keyof typeof SupportedWeb3Connectivity
 
 type AmbireDappManifest = {
@@ -239,71 +235,66 @@ type AmbireDappManifest = {
     forceInternal?: boolean
 }
 
-const chainIdToWalletNetworkId = (chainId: number): NetworkId | null => {
-    return networks.find((n) => n.chainId === chainId)?.id || null
-}
+// const chainIdToWalletNetworkId = (chainId: number): NetworkId | null => {
+//     return networks.find((n) => n.chainId === chainId)?.id || null
+// }
 
-function getGnosisDefaultList(): Array<AmbireDappManifest> {
-    const asWalletDapps = gnosisDefaultList.apps.concat(walletGnosisCatalog.apps).map((dapp: any) => {
-        const walletDapp = {
-            ...dapp,
-            connectionType: WalletConnectionType.gnosis,
-            networks: dapp.networks.map((n: number) => chainIdToWalletNetworkId(n)).filter((n: any) => !!n) as NetworkId[],
-            device: [DeviceCompatability.web]
-        }
+// function getGnosisDefaultList(): Array<AmbireDappManifest> {
+//     const asWalletDapps = gnosisDefaultList.apps.concat(walletGnosisCatalog.apps).map((dapp: any) => {
+//         const walletDapp = {
+//             ...dapp,
+//             connectionType: WalletConnectionType.gnosis,
+//             networks: dapp.networks.map((n: number) => chainIdToWalletNetworkId(n)).filter((n: any) => !!n) as NetworkId[]
+//         }
 
-        return walletDapp
-    })
+//         return walletDapp
+//     })
 
-    return asWalletDapps
-}
+//     return asWalletDapps
+// }
 
-function getWalletConnectDefaultList(): Array<AmbireDappManifest> {
-    const asWalletDapps = walletWalletConnectCatalog.apps.map((dapp: any) => {
-        const walletDapp = {
-            ...dapp,
-            connectionType: WalletConnectionType.walletconnect,
-            networks: dapp.networks.map((n: number) => chainIdToWalletNetworkId(n)).filter((n: any) => !!n) as NetworkId[],
-            device: [DeviceCompatability.mobile]
+// function getWalletConnectDefaultList(): Array<AmbireDappManifest> {
+//     const asWalletDapps = walletWalletConnectCatalog.apps.map((dapp: any) => {
+//         const walletDapp = {
+//             ...dapp,
+//             connectionType: WalletConnectionType.walletconnect,
+//             networks: dapp.networks.map((n: number) => chainIdToWalletNetworkId(n)).filter((n: any) => !!n) as NetworkId[]
+//         }
 
-        }
+//         return walletDapp
+//     })
 
-        return walletDapp
-    })
+//     return asWalletDapps
+// }
 
-    return asWalletDapps
-}
+// function getWalletGnosisDefaultList(): Array<AmbireDappManifest> {
+//     const walletGnosisDapps: Array<AmbireDappManifest> = walletGnosisDefaultCatalog.apps
+//         .map((d: any) => ({
+//             ...d,
+//             connectionType: WalletConnectionType.gnosis,
+//             networks: d.networks as NetworkId[]
+//         }))
 
-function getWalletGnosisDefaultList(): Array<AmbireDappManifest> {
-    const walletGnosisDapps: Array<AmbireDappManifest> = walletGnosisDefaultCatalog.apps
-        .map((d: any) => ({
-            ...d,
-            connectionType: WalletConnectionType.gnosis,
-            networks: d.networks as NetworkId[],
-            device: [DeviceCompatability.web]
-        }))
+//     return walletGnosisDapps
+// }
 
-    return walletGnosisDapps
-}
+// function getWalletWalletconnectDefaultList(): Array<AmbireDappManifest> {
+//     const walletGnosisDapps: Array<AmbireDappManifest> = walletWalletConnectDefaultCatalog.apps
+//         .map((d: any) => ({
+//             ...d,
+//             connectionType: WalletConnectionType.walletconnect,
+//             networks: d.networks as NetworkId[]
+//         }))
 
-function getWalletWalletconnectDefaultList(): Array<AmbireDappManifest> {
-    const walletGnosisDapps: Array<AmbireDappManifest> = walletWalletConnectDefaultCatalog.apps
-        .map((d: any) => ({
-            ...d,
-            connectionType: WalletConnectionType.walletconnect,
-            networks: d.networks as NetworkId[],
-            device: [DeviceCompatability.mobile]
-        }))
-
-    return walletGnosisDapps
-}
+//     return walletGnosisDapps
+// }
 
 function getWalletDappCatalog(): Array<AmbireDappManifest> {
-    const dappCatalog = getWalletGnosisDefaultList()
-        .concat(getGnosisDefaultList())
-        // .concat(getWalletWalletconnectDefaultList())
-        // .concat(getWalletConnectDefaultList())
-
+    // const dappCatalog = getWalletGnosisDefaultList()
+    //     .concat(getGnosisDefaultList())
+    //     // .concat(getWalletWalletconnectDefaultList())
+    //     // .concat(getWalletConnectDefaultList())
+    const dappCatalog = fullCatalog;
     return dappCatalog
 }
 
