@@ -4,6 +4,8 @@ const walletWalletConnectDefaultCatalog = require('./catalogs/ambire-wallet-wall
 const walletWalletConnectCatalog = require('./catalogs/wallet-walletconnect.applist.json')
 const walletGnosisCatalog = require('./catalogs/wallet-gnosis.applist.json')
 const fs = require('fs');
+const path = require('path')
+const mkdirp = require('mkdirp')
 
 export enum NETWORKS {
     'ethereum' = 'ethereum',
@@ -198,11 +200,6 @@ const networks: NetworkType[] = [
     // 	unstoppableDomainsChain: 'ERC20',
     // }
 ]
-
-const fs = require('fs')
-const path = require('path')
-const mkdirp = require('mkdirp')
-
 enum WalletConnectionType {
     'gnosis' = 'gnosis',
     'walletconnect' = 'walletconnect'
@@ -310,20 +307,22 @@ function getWalletDappCatalog(): Array<AmbireDappManifest> {
     return dappCatalog
 }
 
-const catalogs = JSON.stringify(getWalletDappCatalog())
-const fileDir = path.join(__dirname, 'catalogs')
-const filePath = path.join(fileDir, 'ambire.applist.json')
 
-const writeFile = async () => {
+async function saveDappInfo() {
+
+    const catalogs = JSON.stringify(getWalletDappCatalog())
+    const fileDir = path.join(__dirname, 'catalogs')
+    const filePath = path.join(fileDir, 'ambire.applist.json')
+
     try {
         await mkdirp(fileDir)
         await fs.writeFileSync(filePath, catalogs)
-        console.log('Catalog combined!')
-        process.exit(0)
+        console.log('Catalog combined and saved!')
     } catch (err) {
         console.error(err)
-        process.exit(1)
     }
 }
 
-writeFile()
+saveDappInfo()
+
+module.exports = {getWalletDappCatalog}

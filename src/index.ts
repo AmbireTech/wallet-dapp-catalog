@@ -3,7 +3,7 @@ const walletGnosisDefaultCatalog = require('./catalogs/ambire-wallet-gnosis-defa
 const walletWalletConnectDefaultCatalog = require('./catalogs/ambire-wallet-walletconnect-default.applist.json')
 const walletWalletConnectCatalog = require('./catalogs/wallet-walletconnect.applist.json')
 const walletGnosisCatalog = require('./catalogs/wallet-gnosis.applist.json')
-const fullCatalog = require('./catalogs/ambire.applist.json')
+const {getWalletDappCatalog} = require('./combineDapps')
 
 export enum NETWORKS {
     'ethereum' = 'ethereum',
@@ -289,21 +289,14 @@ type AmbireDappManifest = {
 //     return walletGnosisDapps
 // }
 
-function getWalletDappCatalog(): Array<AmbireDappManifest> {
-    // const dappCatalog = getWalletGnosisDefaultList()
-    //     .concat(getGnosisDefaultList())
-    //     // .concat(getWalletWalletconnectDefaultList())
-    //     // .concat(getWalletConnectDefaultList())
-    const dappCatalog = fullCatalog;
-    return dappCatalog
-}
 
-const catalogs = JSON.stringify(getWalletDappCatalog())
+const buildAll = async () =>{
+    const catalogs = JSON.stringify(getWalletDappCatalog())
 
-const fileDir = path.join(__dirname, '../', 'build')
-const filePath = path.join(fileDir, 'ambire-wallet-dapp-catalog.json')
-
-const writeFile = async () => {
+    const fileDir = path.join(__dirname, '../', 'build')
+    const filePath = path.join(fileDir, 'ambire-wallet-dapp-catalog.json')
+    console.log("OK");
+    
     try {
         await mkdirp(fileDir)
         await fs.writeFileSync(filePath, catalogs)
@@ -315,4 +308,4 @@ const writeFile = async () => {
     }
 }
 
-writeFile()
+buildAll()
