@@ -295,7 +295,6 @@ const buildAll = async () =>{
 
     const fileDir = path.join(__dirname, '../', 'build')
     const filePath = path.join(fileDir, 'ambire-wallet-dapp-catalog.json')
-    console.log("OK");
     
     try {
         await mkdirp(fileDir)
