@@ -211,7 +211,7 @@ enum SupportedWeb3Connectivity {
     'injected' = 'injected'
 }
 
-enum DeviceCompatability {
+enum ApplicationType {
     'mobile' = 'mobile',
     'web' = 'web',
 }
@@ -226,7 +226,7 @@ type AmbireDappManifest = {
     iconUrl: string
     iconPath?: string
     connectionType: Array<WalletConnectionType>
-    device: Array<DeviceCompatability>
+    applicationType: Array<ApplicationType>
     providedBy?: {
         name: string
         url: string
@@ -248,7 +248,7 @@ function getGnosisDefaultList(): Array<AmbireDappManifest> {
             ...dapp,
             connectionType: [WalletConnectionType.gnosis],
             networks: dapp.networks.map((n: number) => chainIdToWalletNetworkId(n)).filter((n: any) => !!n) as NetworkId[],
-            device: [DeviceCompatability.web]
+            applicationType: [ApplicationType.web]
         }
 
         return walletDapp
@@ -263,7 +263,7 @@ function getWalletConnectDefaultList(): Array<AmbireDappManifest> {
             ...dapp,
             connectionType: [WalletConnectionType.walletconnect],
             networks: dapp.networks.map((n: number) => chainIdToWalletNetworkId(n)).filter((n: any) => !!n) as NetworkId[],
-            device: [DeviceCompatability.mobile]
+            applicationType: [ApplicationType.mobile]
 
         }
 
@@ -279,7 +279,7 @@ function getWalletGnosisDefaultList(): Array<AmbireDappManifest> {
             ...d,
             connectionType: [WalletConnectionType.gnosis],
             networks: d.networks as NetworkId[],
-            device: [DeviceCompatability.web]
+            applicationType: [ApplicationType.web]
         }))
 
     return walletGnosisDapps
@@ -291,7 +291,7 @@ function getWalletWalletconnectDefaultList(): Array<AmbireDappManifest> {
             ...d,
             connectionType: [WalletConnectionType.walletconnect],
             networks: d.networks as NetworkId[],
-            device: [DeviceCompatability.mobile]
+            applicationType: [ApplicationType.mobile]
         }))
 
     return walletGnosisDapps
