@@ -248,7 +248,7 @@ function getGnosisDefaultList(): Array<AmbireDappManifest> {
             ...dapp,
             connectionType: [WalletConnectionType.gnosis],
             networks: dapp.networks.map((n: number) => chainIdToWalletNetworkId(n)).filter((n: any) => !!n) as NetworkId[],
-            applicationType: [ApplicationType.web]
+            applicationType: [ApplicationType.mobile,ApplicationType.web]
         }
 
         return walletDapp
@@ -279,7 +279,7 @@ function getWalletGnosisDefaultList(): Array<AmbireDappManifest> {
             ...d,
             connectionType: [WalletConnectionType.gnosis],
             networks: d.networks as NetworkId[],
-            applicationType: [ApplicationType.web]
+            applicationType: [ApplicationType.mobile,ApplicationType.web]
         }))
 
     return walletGnosisDapps
