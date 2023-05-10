@@ -6,7 +6,7 @@ const mkdirp = require('mkdirp')
 
 
 const buildAndSave = async () =>{
-    const catalogs = JSON.stringify(getWalletDappCatalog())
+    const catalogs = JSON.stringify(getWalletDappCatalog(),null,2)
 
     const fileDir = path.join(__dirname, '../', 'build')
     const filePath = path.join(fileDir, 'ambire-wallet-dapp-catalog.json')

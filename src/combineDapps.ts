@@ -310,7 +310,7 @@ function getWalletDappCatalog(): Array<AmbireDappManifest> {
 
 async function saveDappInfo() {
 
-    const catalogs = JSON.stringify(getWalletDappCatalog())
+    const catalogs = JSON.stringify(getWalletDappCatalog(),null,2)
     const fileDir = path.join(__dirname, 'catalogs')
     const filePath = path.join(fileDir, 'ambire.applist.json')
 
