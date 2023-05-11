@@ -29,7 +29,11 @@
         "ethereum"
       ],
       "featured": true,
-      "forceInternal": true
+      "forceInternal": true,
+      "applicationType": [
+        "web",
+        "mobile"
+      ]
     },
     {
       "id": "snapshot",
@@ -54,6 +58,10 @@
         "harmony",
         "cronos",
         "aurora"
+      ],
+      "applicationType": [
+        "web",
+        "mobile"
       ]
     },
     {
@@ -68,6 +76,10 @@
       },
       "networks": [
         "binance-smart-chain"
+      ],
+      "applicationType": [
+        "web",
+        "mobile"
       ]
     },
     {
@@ -82,6 +94,10 @@
       },
       "networks": [
         "polygon"
+      ],
+      "applicationType": [
+        "web",
+        "mobile"
       ]
     },
     {
@@ -99,6 +115,10 @@
         "ethereum",
         "fantom",
         "arbitrum"
+      ],
+      "applicationType": [
+        "web",
+        "mobile"
       ]
     },
     {
@@ -121,6 +141,10 @@
         "optimism",
         "avalanche",
         "gnosis"
+      ],
+      "applicationType": [
+        "web",
+        "mobile"
       ]
     },
     {
@@ -131,6 +155,10 @@
       "description": "Create, explore and trade in the first-ever virtual world owned by its users.",
       "networks": [
         "ethereum"
+      ],
+      "applicationType": [
+        "web",
+        "mobile"
       ]
     },
     {
@@ -145,7 +173,11 @@
       "providedBy": {
         "name": "Loopring",
         "url": "https://twitter.com/loopringorg"
-      }
+      },
+      "applicationType": [
+        "web",
+        "mobile"
+      ]
     },
     {
       "id": "spookyswap",
@@ -159,7 +191,11 @@
       "providedBy": {
         "name": "SpookySwap",
         "url": "https://spooky.fi/"
-      }
+      },
+      "applicationType": [
+        "web",
+        "mobile"
+      ]
     },
     {
       "id": "curve",
@@ -181,7 +217,11 @@
       "providedBy": {
         "name": "Curve",
         "url": "https://curve.fi/"
-      }
+      },
+      "applicationType": [
+        "web",
+        "mobile"
+      ]
     },
     {
       "id": "looksrare",
@@ -195,7 +235,11 @@
       "providedBy": {
         "name": "LooksRare",
         "url": "https://looksrare.org/"
-      }
+      },
+      "applicationType": [
+        "web",
+        "mobile"
+      ]
     },
     {
       "id": "synapseprotocol",
@@ -220,7 +264,11 @@
       "providedBy": {
         "name": "Synapse Protocol",
         "url": "https://synapseprotocol.com/"
-      }
+      },
+      "applicationType": [
+        "web",
+        "mobile"
+      ]
     },
     {
       "id": "dexguru",
@@ -234,7 +282,11 @@
       "providedBy": {
         "name": "Dex Guru",
         "url": "https://dex.guru/"
-      }
+      },
+      "applicationType": [
+        "web",
+        "mobile"
+      ]
     }
   ]
 }
