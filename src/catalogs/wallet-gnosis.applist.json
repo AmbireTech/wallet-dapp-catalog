@@ -36,7 +36,8 @@
         43114
       ],
       "applicationType": [
-        "web"
+        "web",
+        "mobile"
       ]
     },
     {
@@ -62,7 +63,8 @@
         43114
       ],
       "applicationType": [
-        "web"
+        "web",
+        "mobile"
       ]
     }
   ]

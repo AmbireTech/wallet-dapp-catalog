@@ -78,7 +78,8 @@
         1
       ],
       "applicationType": [
-        "web"
+        "web",
+        "mobile"
       ]
     }
   ]

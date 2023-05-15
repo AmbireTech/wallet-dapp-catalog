@@ -46,7 +46,8 @@
         "aurora"
       ],
       "applicationType": [
-        "web"
+        "web",
+        "mobile"
       ]
     },
     {
@@ -67,7 +68,8 @@
       ],
       "featured": true,
       "applicationType": [
-        "web"
+        "web",
+        "mobile"
       ]
     },
     {
@@ -85,7 +87,8 @@
       ],
       "featured": true,
       "applicationType": [
-        "web"
+        "web",
+        "mobile"
       ]
     },
     {
@@ -103,7 +106,8 @@
       ],
       "featured": true,
       "applicationType": [
-        "web"
+        "web",
+        "mobile"
       ]
     },
     {
@@ -131,7 +135,8 @@
       "featured": true,
       "forceInternal": true,
       "applicationType": [
-        "web"
+        "web",
+        "mobile"
       ]
     },
     {
@@ -154,7 +159,8 @@
         "binance-smart-chain"
       ],
       "applicationType": [
-        "web"
+        "web",
+        "mobile"
       ]
     },
     {
@@ -177,7 +183,8 @@
         "optimism"
       ],
       "applicationType": [
-        "web"
+        "web",
+        "mobile"
       ]
     },
     {
@@ -199,7 +206,8 @@
         "binance-smart-chain"
       ],
       "applicationType": [
-        "web"
+        "web",
+        "mobile"
       ]
     },
     {
@@ -222,7 +230,8 @@
         "fantom"
       ],
       "applicationType": [
-        "web"
+        "web",
+        "mobile"
       ]
     },
     {
@@ -242,7 +251,8 @@
       ],
       "featured": true,
       "applicationType": [
-        "web"
+        "web",
+        "mobile"
       ]
     },
     {
@@ -257,7 +267,8 @@
         "arbitrum"
       ],
       "applicationType": [
-        "web"
+        "web",
+        "mobile"
       ]
     },
     {
@@ -279,7 +290,8 @@
       },
       "featured": true,
       "applicationType": [
-        "web"
+        "web",
+        "mobile"
       ]
     },
     {
@@ -297,7 +309,8 @@
         "optimism"
       ],
       "applicationType": [
-        "web"
+        "web",
+        "mobile"
       ]
     },
     {
@@ -323,7 +336,8 @@
         "url": "https://www.mai.finance/"
       },
       "applicationType": [
-        "web"
+        "web",
+        "mobile"
       ]
     },
     {
@@ -340,7 +354,8 @@
         "url": "https://kwenta.io/"
       },
       "applicationType": [
-        "web"
+        "web",
+        "mobile"
       ]
     }
   ]
