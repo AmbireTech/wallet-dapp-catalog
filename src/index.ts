@@ -291,8 +291,8 @@ function getWalletWalletconnectDefaultList(): Array<AmbireDappManifest> {
 function getWalletDappCatalog(): Array<AmbireDappManifest> {
     const dappCatalog = getWalletGnosisDefaultList()
         .concat(getGnosisDefaultList())
-        // .concat(getWalletWalletconnectDefaultList())
-        // .concat(getWalletConnectDefaultList())
+        .concat(getWalletWalletconnectDefaultList())
+        .concat(getWalletConnectDefaultList())
 
     return dappCatalog
 }
