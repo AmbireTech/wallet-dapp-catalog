@@ -38,6 +38,7 @@ Check out Ambire Wallet here: https://wallet.ambire.com
 
 ```
 {
+    "id": "dappid",
     "url": "https://dapp.someurl.com/",
     "name": "Some dApp name",
     "iconUrl": "https://some.dapp.com/icon.png",
@@ -49,6 +50,10 @@ Check out Ambire Wallet here: https://wallet.ambire.com
         "name": "Some developer",
         "url": "https://app.reflexer.finance/"
     },
+    "applicationType": [
+        "web",
+        "mobile"
+    ],
 }
   ```
 ## Extra tips:
