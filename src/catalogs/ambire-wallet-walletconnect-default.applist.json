@@ -29,7 +29,10 @@
         "ethereum"
       ],
       "featured": true,
-      "forceInternal": true
+      "forceInternal": true,
+      "applicationType": [
+        "mobile"
+      ]
     },
     {
       "id": "snapshot",
@@ -54,6 +57,9 @@
         "harmony",
         "cronos",
         "aurora"
+      ],
+      "applicationType": [
+        "mobile"
       ]
     },
     {
@@ -68,6 +74,9 @@
       },
       "networks": [
         "binance-smart-chain"
+      ],
+      "applicationType": [
+        "mobile"
       ]
     },
     {
@@ -82,6 +91,9 @@
       },
       "networks": [
         "polygon"
+      ],
+      "applicationType": [
+        "mobile"
       ]
     },
     {
@@ -99,6 +111,9 @@
         "ethereum",
         "fantom",
         "arbitrum"
+      ],
+      "applicationType": [
+        "mobile"
       ]
     },
     {
@@ -121,6 +136,9 @@
         "optimism",
         "avalanche",
         "gnosis"
+      ],
+      "applicationType": [
+        "mobile"
       ]
     },
     {
@@ -131,6 +149,9 @@
       "description": "Create, explore and trade in the first-ever virtual world owned by its users.",
       "networks": [
         "ethereum"
+      ],
+      "applicationType": [
+        "mobile"
       ]
     },
     {
@@ -145,7 +166,10 @@
       "providedBy": {
         "name": "Loopring",
         "url": "https://twitter.com/loopringorg"
-      }
+      },
+      "applicationType": [
+        "mobile"
+      ]
     },
     {
       "id": "spookyswap",
@@ -159,7 +183,10 @@
       "providedBy": {
         "name": "SpookySwap",
         "url": "https://spooky.fi/"
-      }
+      },
+      "applicationType": [
+        "mobile"
+      ]
     },
     {
       "id": "curve",
@@ -181,7 +208,10 @@
       "providedBy": {
         "name": "Curve",
         "url": "https://curve.fi/"
-      }
+      },
+      "applicationType": [
+        "mobile"
+      ]
     },
     {
       "id": "looksrare",
@@ -195,7 +225,10 @@
       "providedBy": {
         "name": "LooksRare",
         "url": "https://looksrare.org/"
-      }
+      },
+      "applicationType": [
+        "mobile"
+      ]
     },
     {
       "id": "synapseprotocol",
@@ -220,7 +253,10 @@
       "providedBy": {
         "name": "Synapse Protocol",
         "url": "https://synapseprotocol.com/"
-      }
+      },
+      "applicationType": [
+        "mobile"
+      ]
     },
     {
       "id": "dexguru",
@@ -234,7 +270,10 @@
       "providedBy": {
         "name": "Dex Guru",
         "url": "https://dex.guru/"
-      }
+      },
+      "applicationType": [
+        "mobile"
+      ]
     }
   ]
 }

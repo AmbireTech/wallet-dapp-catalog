@@ -1,19 +1,18 @@
-
 {
-    "name": "Ambire Wallet -WalletConnect apps list",
-    "timestamp": "2022-01-09T12:03:09.143Z",
-    "version": {
-      "major": 0,
-      "minor": 1,
-      "patch": 0
-    },
-    "logoUri": "logo-uri",
-    "keywords": [
-      "walletconnect",
-      "safe",
-      "default",
-      "app",
-      "list"
-    ],
-    "apps": []
-  }
+  "name": "Ambire Wallet -WalletConnect apps list",
+  "timestamp": "2022-01-09T12:03:09.143Z",
+  "version": {
+    "major": 0,
+    "minor": 1,
+    "patch": 0
+  },
+  "logoUri": "logo-uri",
+  "keywords": [
+    "walletconnect",
+    "safe",
+    "default",
+    "app",
+    "list"
+  ],
+  "apps": []
+}
