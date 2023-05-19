@@ -39,7 +39,7 @@
       "id": "{\"url\":\"https://app.ens.domains/\",\"name\":\"ENS App\"}",
       "url": "https://app.ens.domains/",
       "name": "ENS App",
-      "iconUrl": "https://app.ens.domains/android-chrome-144x144.png",
+      "iconUrl": "https://dappcatalog.ambire.com/icons/ens.png",
       "description": "Decentralised naming for wallets, websites, & more.",
       "iconPath": "android-chrome-144x144.png",
       "networks": [
