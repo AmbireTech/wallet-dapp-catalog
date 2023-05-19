@@ -237,7 +237,7 @@
       "iconUrl": "https://synapseprotocol.com/favicon.ico",
       "description": "Buy & Sell NFTs, Get Rewards",
       "networks": [
-        "arbitrrum",
+        "arbitrum",
         "avalanche",
         "binance-smart-chain",
         "optimism",
@@ -265,7 +265,7 @@
       "iconUrl": "https://dex.guru/logo-circle.png",
       "description": "DexGuru gives you unparalleled coverage of on-chain markets integrated into one place and delivered in real-time.",
       "networks": [
-        "arbitrrum"
+        "arbitrum"
       ],
       "providedBy": {
         "name": "Dex Guru",
