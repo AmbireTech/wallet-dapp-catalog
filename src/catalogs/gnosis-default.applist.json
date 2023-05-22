@@ -29,6 +29,10 @@
       "networks": [
         1,
         10
+      ],
+      "applicationType": [
+        "web",
+        "mobile"
       ]
     },
     {
@@ -41,6 +45,10 @@
       "networks": [
         1,
         4
+      ],
+      "applicationType": [
+        "web",
+        "mobile"
       ]
     },
     {
@@ -56,6 +64,10 @@
       },
       "networks": [
         1
+      ],
+      "applicationType": [
+        "web",
+        "mobile"
       ]
     },
     {
@@ -67,6 +79,10 @@
       "iconPath": "logo192.png",
       "networks": [
         1
+      ],
+      "applicationType": [
+        "web",
+        "mobile"
       ]
     }
   ]

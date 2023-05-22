@@ -299,19 +299,53 @@ function getWalletDappCatalog(): Array<AmbireDappManifest> {
 
 const catalogs = JSON.stringify(getWalletDappCatalog())
 
-const fileDir = path.join(__dirname, '../', 'build')
-const filePath = path.join(fileDir, 'ambire-wallet-dapp-catalog.json')
+const buildDir = path.join(__dirname, '../', 'build')
+const filePath = path.join(buildDir, 'ambire-wallet-dapp-catalog.json')
+const sourceIconsDir = path.join(__dirname, 'icons')
+const targetIconsDir = path.join(buildDir, 'icons')
 
 const writeFile = async () => {
     try {
-        await mkdirp(fileDir)
+        await mkdirp(buildDir)
         await fs.writeFileSync(filePath, catalogs)
         console.log('Catalog exported!')
+        await copyDirectory(sourceIconsDir,targetIconsDir)
+        console.log("Icons exported")
         process.exit(0)
     } catch (err) {
         console.error(err)
         process.exit(1)
     }
+
 }
+
+function copyDirectory(sourceDir: string, targetDir: string) {
+    // Create the target directory if it doesn't exist
+    if (!fs.existsSync(targetDir)) {
+      fs.mkdirSync(targetDir);
+    }
+  
+    // Read the contents of the source directory
+    const files = fs.readdirSync(sourceDir);
+  
+    // Iterate through the files and directories in the source directory
+    files.forEach((file: any) => {
+      const sourcePath = path.join(sourceDir, file);
+      const targetPath = path.join(targetDir, file);
+  
+      // Check if the current item is a file or a directory
+      if (fs.lstatSync(sourcePath).isFile()) {
+        // If it's a file, move it to the target directory
+        fs.renameSync(sourcePath, targetPath);
+      } else {
+        // If it's a directory, recursively move it to the target directory
+        copyDirectory(sourcePath, targetPath);
+      }
+    });
+  
+    // Remove the empty source directory after moving its contents
+    // fs.rmdirSync(sourceDir);
+  }
+
 
 writeFile()
