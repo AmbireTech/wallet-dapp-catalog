@@ -145,7 +145,7 @@
       "id": "decentraland",
       "url": "https://play.decentraland.org/",
       "name": "Decentraland",
-      "iconUrl": "https://decentraland.org/favicon.svg",
+      "iconUrl": "https://dappcatalog.ambire.com/icons/decentraland.png",
       "description": "Create, explore and trade in the first-ever virtual world owned by its users.",
       "networks": [
         "ethereum"
