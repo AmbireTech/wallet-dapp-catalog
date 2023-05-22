@@ -192,7 +192,7 @@
       "id": "curve",
       "url": "https://curve.fi/",
       "name": "Curve",
-      "iconUrl": "https://curve.fi/logo-square.svg",
+      "iconUrl": "https://dappcatalog.ambire.com/icons/curve.png",
       "description": "Decentralized exchange liquidity pool designed for extremely efficient stablecoin trading and low-risk income for liquidity providers",
       "networks": [
         "ethereum",
