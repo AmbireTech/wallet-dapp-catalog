@@ -22,6 +22,9 @@
       "description": "Bitcoin.com's multichain Verse DEX aims to bring everyone permissionless and non-custodial trading access, with a special focus on newcomers to DeFi. ",
       "networks": [
         1
+      ],
+      "applicationType": [
+        "web"
       ]
     }
   ]
