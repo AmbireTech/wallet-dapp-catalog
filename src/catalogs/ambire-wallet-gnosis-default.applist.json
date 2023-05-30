@@ -46,8 +46,7 @@
         "aurora"
       ],
       "applicationType": [
-        "web",
-        "mobile"
+        "web"
       ]
     },
     {
@@ -106,8 +105,7 @@
       ],
       "featured": true,
       "applicationType": [
-        "web",
-        "mobile"
+        "web"
       ]
     },
     {
@@ -159,8 +157,7 @@
         "binance-smart-chain"
       ],
       "applicationType": [
-        "web",
-        "mobile"
+        "web"
       ]
     },
     {
@@ -183,8 +180,7 @@
         "optimism"
       ],
       "applicationType": [
-        "web",
-        "mobile"
+        "web"
       ]
     },
     {
@@ -267,8 +263,7 @@
         "arbitrum"
       ],
       "applicationType": [
-        "web",
-        "mobile"
+        "web"
       ]
     },
     {
@@ -309,8 +304,7 @@
         "optimism"
       ],
       "applicationType": [
-        "web",
-        "mobile"
+        "web"
       ]
     },
     {
@@ -336,8 +330,7 @@
         "url": "https://www.mai.finance/"
       },
       "applicationType": [
-        "web",
-        "mobile"
+        "web"
       ]
     },
     {
@@ -354,8 +347,7 @@
         "url": "https://kwenta.io/"
       },
       "applicationType": [
-        "web",
-        "mobile"
+        "web"
       ]
     }
   ]

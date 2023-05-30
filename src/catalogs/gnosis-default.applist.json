@@ -31,8 +31,7 @@
         10
       ],
       "applicationType": [
-        "web",
-        "mobile"
+        "web"
       ]
     },
     {
@@ -65,8 +64,7 @@
         1
       ],
       "applicationType": [
-        "web",
-        "mobile"
+        "web"
       ]
     },
     {
@@ -80,8 +78,7 @@
         1
       ],
       "applicationType": [
-        "web",
-        "mobile"
+        "web"
       ]
     }
   ]
