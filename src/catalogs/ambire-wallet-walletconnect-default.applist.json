@@ -31,7 +31,6 @@
       "featured": true,
       "forceInternal": true,
       "applicationType": [
-        "mobile"
       ]
     },
     {
@@ -59,7 +58,6 @@
         "aurora"
       ],
       "applicationType": [
-        "mobile"
       ]
     },
     {
@@ -93,7 +91,6 @@
         "polygon"
       ],
       "applicationType": [
-        "mobile"
       ]
     },
     {
@@ -113,7 +110,6 @@
         "arbitrum"
       ],
       "applicationType": [
-        "mobile"
       ]
     },
     {
@@ -151,7 +147,6 @@
         "ethereum"
       ],
       "applicationType": [
-        "mobile"
       ]
     },
     {
@@ -168,7 +163,6 @@
         "url": "https://twitter.com/loopringorg"
       },
       "applicationType": [
-        "mobile"
       ]
     },
     {
@@ -185,7 +179,6 @@
         "url": "https://spooky.fi/"
       },
       "applicationType": [
-        "mobile"
       ]
     },
     {
@@ -210,7 +203,6 @@
         "url": "https://curve.fi/"
       },
       "applicationType": [
-        "mobile"
       ]
     },
     {
@@ -227,7 +219,6 @@
         "url": "https://looksrare.org/"
       },
       "applicationType": [
-        "mobile"
       ]
     },
     {
@@ -255,7 +246,6 @@
         "url": "https://synapseprotocol.com/"
       },
       "applicationType": [
-        "mobile"
       ]
     },
     {
@@ -272,7 +262,6 @@
         "url": "https://dex.guru/"
       },
       "applicationType": [
-        "mobile"
       ]
     }
   ]
