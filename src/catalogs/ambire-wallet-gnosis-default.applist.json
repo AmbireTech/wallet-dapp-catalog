@@ -67,8 +67,7 @@
       ],
       "featured": true,
       "applicationType": [
-        "web",
-        "mobile"
+        "web"
       ]
     },
     {
@@ -86,8 +85,7 @@
       ],
       "featured": true,
       "applicationType": [
-        "web",
-        "mobile"
+        "web"
       ]
     },
     {
@@ -133,8 +131,8 @@
       "featured": true,
       "forceInternal": true,
       "applicationType": [
-        "web",
-        "mobile"
+        "web"
+        
       ]
     },
     {
@@ -202,8 +200,7 @@
         "binance-smart-chain"
       ],
       "applicationType": [
-        "web",
-        "mobile"
+        "web"
       ]
     },
     {
@@ -226,8 +223,8 @@
         "fantom"
       ],
       "applicationType": [
-        "web",
-        "mobile"
+        "web"
+        
       ]
     },
     {
@@ -247,8 +244,8 @@
       ],
       "featured": true,
       "applicationType": [
-        "web",
-        "mobile"
+        "web"
+        
       ]
     },
     {
@@ -285,8 +282,8 @@
       },
       "featured": true,
       "applicationType": [
-        "web",
-        "mobile"
+        "web"
+        
       ]
     },
     {
