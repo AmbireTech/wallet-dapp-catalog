@@ -65,6 +65,25 @@
         "web",
         "mobile"
       ]
+    },
+    {
+      "id": "exitandutility.eth",
+      "url": "https://exitandutility.eth.limo/",
+      "name": "Exit & Utility",
+      "iconUrl": "https://exitandutility.eth.limo/images/black-logo.png",
+      "description": "Easily create no-HODLing NFTs, Where the people who value your NFT most get to keep it.",
+      "iconPath":  "/images/favicon.png",
+      "networks": [
+        1,
+        10,
+        100,
+        137,
+        42161
+      ],
+      "applicationType": [
+        "web",
+        "mobile"
+      ]
     }
   ]
 }
