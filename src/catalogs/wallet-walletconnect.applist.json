@@ -14,5 +14,18 @@
     "app",
     "list"
   ],
-  "apps": []
+  "apps": [
+    {
+      "url": "hhttps://metamax.exchange/",
+      "name": "METAMAX",
+      "iconUrl": "https://metamax.exchange/metamax-logo-with-text.svg",
+      "description": "A multichain aggregator of DEX aggregators offering the best possible price at zero fees.",
+      "networks": [
+        1
+      ],
+      "applicationType": [
+        "web"
+      ]
+    }
+  ]
 }
