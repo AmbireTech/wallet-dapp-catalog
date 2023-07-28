@@ -65,6 +65,42 @@
         "web",
         "mobile"
       ]
+    },
+    {
+      "id": "silo.finance",
+      "url": "https://app.silo.finance/",
+      "name": "Silo Finance",
+      "iconUrl": "https://app.silo.finance/silo-icon.png",
+      "description": "Enabling lending and borrowing of any asset",
+      "networks": [
+        1,
+        42161
+      ],
+      "applicationType": [
+        "web"
+      ]
+    },
+    {
+      "id": "Bungee",
+      "url": "https://www.bungee.exchange/",
+      "name": "Bungee Exchange",
+      "iconUrl": "https://www.bungee.exchange/./android-chrome-192x192.png",
+      "description": "Manage and revoke your token allowances with Revoke.cash",
+      "iconPath": "./android-chrome-192x192.png",
+      "networks": [
+        1,
+        10,
+        56,
+        100,
+        137,
+        250,
+        42161,
+        43114
+      ],
+      "forceInternal": true,
+      "applicationType": [
+        "web"
+      ]
     }
   ]
 }
