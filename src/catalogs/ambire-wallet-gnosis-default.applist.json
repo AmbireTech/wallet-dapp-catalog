@@ -44,6 +44,9 @@
         "cronos",
         "ethereum-pow",
         "aurora"
+      ],
+      "applicationType": [
+        "web"
       ]
     },
     {
@@ -62,7 +65,11 @@
         "avalanche",
         "binance-smart-chain"
       ],
-      "featured": true
+      "featured": true,
+      "applicationType": [
+        "web",
+        "mobile"
+      ]
     },
     {
       "id": "lido",
@@ -77,7 +84,11 @@
       "networks": [
         "ethereum"
       ],
-      "featured": true
+      "featured": true,
+      "applicationType": [
+        "web",
+        "mobile"
+      ]
     },
     {
       "id": "lido-polygon",
@@ -92,7 +103,10 @@
       "networks": [
         "ethereum"
       ],
-      "featured": true
+      "featured": true,
+      "applicationType": [
+        "web"
+      ]
     },
     {
       "id": "sushiswap",
@@ -117,7 +131,11 @@
         "binance-smart-chain"
       ],
       "featured": true,
-      "forceInternal": true
+      "forceInternal": true,
+      "applicationType": [
+        "web",
+        "mobile"
+      ]
     },
     {
       "id": "paraswap",
@@ -137,6 +155,9 @@
         "fantom",
         "optimism",
         "binance-smart-chain"
+      ],
+      "applicationType": [
+        "web"
       ]
     },
     {
@@ -157,6 +178,9 @@
         "arbitrum",
         "harmony",
         "optimism"
+      ],
+      "applicationType": [
+        "web"
       ]
     },
     {
@@ -176,6 +200,10 @@
         "arbitrum",
         "celo",
         "binance-smart-chain"
+      ],
+      "applicationType": [
+        "web",
+        "mobile"
       ]
     },
     {
@@ -196,6 +224,10 @@
         "avalanche",
         "harmony",
         "fantom"
+      ],
+      "applicationType": [
+        "web",
+        "mobile"
       ]
     },
     {
@@ -213,7 +245,11 @@
         "rikeby",
         "gnosis"
       ],
-      "featured": true
+      "featured": true,
+      "applicationType": [
+        "web"
+        
+      ]
     },
     {
       "id": "balancer",
@@ -225,6 +261,10 @@
         "ethereum",
         "polygon",
         "arbitrum"
+      ],
+      "applicationType": [
+        "web",
+        "mobile"
       ]
     },
     {
@@ -244,7 +284,11 @@
         "name": "Hop Protocol",
         "url": "https://hop.exchange/"
       },
-      "featured": true
+      "featured": true,
+      "applicationType": [
+        "web",
+        "mobile"
+      ]
     },
     {
       "id": "aelin",
@@ -259,6 +303,9 @@
       "networks": [
         "ethereum",
         "optimism"
+      ],
+      "applicationType": [
+        "web"
       ]
     },
     {
@@ -282,7 +329,10 @@
       "providedBy": {
         "name": "QiDao",
         "url": "https://www.mai.finance/"
-      }
+      },
+      "applicationType": [
+        "web"
+      ]
     },
     {
       "id": "kewenta",
@@ -296,7 +346,10 @@
       "providedBy": {
         "name": "Kwenta",
         "url": "https://kwenta.io/"
-      }
+      },
+      "applicationType": [
+        "web"
+      ]
     }
   ]
 }

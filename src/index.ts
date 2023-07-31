@@ -291,8 +291,8 @@ function getWalletWalletconnectDefaultList(): Array<AmbireDappManifest> {
 function getWalletDappCatalog(): Array<AmbireDappManifest> {
     const dappCatalog = getWalletGnosisDefaultList()
         .concat(getGnosisDefaultList())
-        // .concat(getWalletWalletconnectDefaultList())
-        // .concat(getWalletConnectDefaultList())
+        .concat(getWalletWalletconnectDefaultList())
+        .concat(getWalletConnectDefaultList())
 
     return dappCatalog
 }
@@ -336,7 +336,7 @@ function copyDirectory(sourceDir: string, targetDir: string) {
       // Check if the current item is a file or a directory
       if (fs.lstatSync(sourcePath).isFile()) {
         // If it's a file, move it to the target directory
-        fs.renameSync(sourcePath, targetPath);
+        fs.copyFileSync(sourcePath, targetPath);
       } else {
         // If it's a directory, recursively move it to the target directory
         copyDirectory(sourcePath, targetPath);

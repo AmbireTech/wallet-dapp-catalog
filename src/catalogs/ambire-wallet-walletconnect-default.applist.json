@@ -29,7 +29,9 @@
         "ethereum"
       ],
       "featured": true,
-      "forceInternal": true
+      "forceInternal": true,
+      "applicationType": [
+      ]
     },
     {
       "id": "snapshot",
@@ -54,6 +56,8 @@
         "harmony",
         "cronos",
         "aurora"
+      ],
+      "applicationType": [
       ]
     },
     {
@@ -68,6 +72,8 @@
       },
       "networks": [
         "binance-smart-chain"
+      ],
+      "applicationType": [
       ]
     },
     {
@@ -82,6 +88,9 @@
       },
       "networks": [
         "polygon"
+      ],
+      "applicationType": [
+        "mobile"
       ]
     },
     {
@@ -99,6 +108,8 @@
         "ethereum",
         "fantom",
         "arbitrum"
+      ],
+      "applicationType": [
       ]
     },
     {
@@ -121,16 +132,21 @@
         "optimism",
         "avalanche",
         "gnosis"
+      ],
+      "applicationType": [
+        "mobile"
       ]
     },
     {
       "id": "decentraland",
       "url": "https://play.decentraland.org/",
       "name": "Decentraland",
-      "iconUrl": "https://decentraland.org/favicon.svg",
+      "iconUrl": "https://dappcatalog.ambire.com/icons/decentraland.png",
       "description": "Create, explore and trade in the first-ever virtual world owned by its users.",
       "networks": [
         "ethereum"
+      ],
+      "applicationType": [
       ]
     },
     {
@@ -145,7 +161,9 @@
       "providedBy": {
         "name": "Loopring",
         "url": "https://twitter.com/loopringorg"
-      }
+      },
+      "applicationType": [
+      ]
     },
     {
       "id": "spookyswap",
@@ -159,13 +177,15 @@
       "providedBy": {
         "name": "SpookySwap",
         "url": "https://spooky.fi/"
-      }
+      },
+      "applicationType": [
+      ]
     },
     {
       "id": "curve",
       "url": "https://curve.fi/",
       "name": "Curve",
-      "iconUrl": "https://curve.fi/logo-square.svg",
+      "iconUrl": "https://dappcatalog.ambire.com/icons/curve.png",
       "description": "Decentralized exchange liquidity pool designed for extremely efficient stablecoin trading and low-risk income for liquidity providers",
       "networks": [
         "ethereum",
@@ -181,7 +201,9 @@
       "providedBy": {
         "name": "Curve",
         "url": "https://curve.fi/"
-      }
+      },
+      "applicationType": [
+      ]
     },
     {
       "id": "looksrare",
@@ -195,7 +217,9 @@
       "providedBy": {
         "name": "LooksRare",
         "url": "https://looksrare.org/"
-      }
+      },
+      "applicationType": [
+      ]
     },
     {
       "id": "synapseprotocol",
@@ -204,7 +228,7 @@
       "iconUrl": "https://synapseprotocol.com/favicon.ico",
       "description": "Buy & Sell NFTs, Get Rewards",
       "networks": [
-        "arbitrrum",
+        "arbitrum",
         "avalanche",
         "binance-smart-chain",
         "optimism",
@@ -220,7 +244,9 @@
       "providedBy": {
         "name": "Synapse Protocol",
         "url": "https://synapseprotocol.com/"
-      }
+      },
+      "applicationType": [
+      ]
     },
     {
       "id": "dexguru",
@@ -229,12 +255,14 @@
       "iconUrl": "https://dex.guru/logo-circle.png",
       "description": "DexGuru gives you unparalleled coverage of on-chain markets integrated into one place and delivered in real-time.",
       "networks": [
-        "arbitrrum"
+        "arbitrum"
       ],
       "providedBy": {
         "name": "Dex Guru",
         "url": "https://dex.guru/"
-      }
+      },
+      "applicationType": [
+      ]
     }
   ]
 }
