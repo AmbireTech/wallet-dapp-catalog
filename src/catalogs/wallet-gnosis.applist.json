@@ -77,7 +77,8 @@
         42161
       ],
       "applicationType": [
-        "web"
+        "web",
+        "mobile"
       ]
     },
     {
@@ -99,7 +100,8 @@
       ],
       "forceInternal": true,
       "applicationType": [
-        "web"
+        "web",
+        "mobile"
       ]
     }
   ]
