@@ -128,7 +128,8 @@
         "fantom",
         "moonbeam",
         "optimism",
-        "binance-smart-chain"
+        "binance-smart-chain",
+        "base"
       ],
       "featured": true,
       "forceInternal": true,
@@ -199,7 +200,8 @@
         "optimism",
         "arbitrum",
         "celo",
-        "binance-smart-chain"
+        "binance-smart-chain",
+        "base"
       ],
       "applicationType": [
         "web",
@@ -223,7 +225,8 @@
         "arbitrum",
         "avalanche",
         "harmony",
-        "fantom"
+        "fantom",
+        "base"
       ],
       "applicationType": [
         "web",
@@ -260,7 +263,8 @@
       "networks": [
         "ethereum",
         "polygon",
-        "arbitrum"
+        "arbitrum",
+        "base"
       ],
       "applicationType": [
         "web",
