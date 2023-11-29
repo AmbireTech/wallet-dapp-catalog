@@ -263,6 +263,25 @@
       },
       "applicationType": [
       ]
+    },
+    {
+      "id": "gmx.io",
+      "url": "https://app.gmx.io/#/trade",
+      "name": "GMX",
+      "iconUrl": "https://gmx.io/og.png",
+      "description": "GMX is a Decentralized Perpetual Exchange. Trade BTC, ETH, AVAX and other top cryptocurrencies with up to 50x leverage directly from your wallet",
+      "networks": [
+        42161,
+        43114 
+      ],
+      "providedBy": {
+          "name": "Some developer",
+          "url": "https://app.reflexer.finance/"
+      },
+      "applicationType": [
+          "web",
+          "mobile"
+      ]
     }
   ]
 }
