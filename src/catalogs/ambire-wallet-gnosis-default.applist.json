@@ -105,7 +105,8 @@
       ],
       "featured": true,
       "applicationType": [
-        "web"
+        "web",
+        "mobile"
       ]
     },
     {
