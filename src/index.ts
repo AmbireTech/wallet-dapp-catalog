@@ -19,7 +19,8 @@ export enum NETWORKS {
     'andromeda' = 'andromeda',
     'rinkeby' = 'rinkeby',
     'cronos' = 'cronos',
-    'aurora' = 'aurora'
+    'aurora' = 'aurora',
+    "base" = "base"
 }
 
 export type NetworkId = keyof typeof NETWORKS
@@ -154,6 +155,16 @@ const networks: NetworkType[] = [
         nativeAssetSymbol: 'ETH',
         name: 'Optimism',
         explorerUrl: 'https://optimistic.etherscan.io',
+        unstoppableDomainsChain: 'ERC20',
+        isGasTankAvailable: true
+    },
+    {
+        id: NETWORKS.base,
+        chainId: 8453,
+        rpc: 'https://rpc.ankr.com/base/0e066bd7837ff1978d6aa30b9f29407deb0276d74f46393e474c2530916c8943',
+        nativeAssetSymbol: 'ETH',
+        name: 'Base',
+        explorerUrl: 'https://basescan.org/',
         unstoppableDomainsChain: 'ERC20',
         isGasTankAvailable: true
     },
