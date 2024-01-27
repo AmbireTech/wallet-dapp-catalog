@@ -296,24 +296,6 @@
       ]
     },
     {
-      "id": "aelin",
-      "url": "https://app.aelin.xyz/",
-      "name": "Aelin",
-      "iconUrl": "https://app.aelin.xyz/favicon/android-chrome-192x192.png",
-      "description": "A permissionless multi-chain protocol for capital raises and OTC deals. No need for VC's, Aelin decentralizes fundraising",
-      "providedBy": {
-        "name": "Aelin",
-        "url": "https://aelin.xyz/"
-      },
-      "networks": [
-        "ethereum",
-        "optimism"
-      ],
-      "applicationType": [
-        "web"
-      ]
-    },
-    {
       "id": "qidao",
       "url": "https://app.mai.finance/",
       "name": "QiDao Vaults",
