@@ -41,7 +41,7 @@
     },
     {
       "id": "revoke.cash",
-      "url": "https://revoke.cash/",
+      "url":"https://revoke.cash/address/${accountAddress}?chainId=${chainId}",
       "name": "Revoke.cash",
       "iconUrl": "https://revoke.cash/assets/images/android-chrome-512x512.png",
       "description": "Manage and revoke your token allowances with Revoke.cash",
