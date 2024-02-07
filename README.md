@@ -33,6 +33,12 @@ Check out Ambire Wallet here: https://wallet.ambire.com
    - we recommend using the Gnosis Safe App protocol via `@gnosis.pm/safe-apps-react-sdk` 
    - to implement Ambire-specific transaction batching, read [this](/how-to-create-a-plugin.md)
 
+### follow the variable template
+- If the url of your dapp requires
+  - the account address - add '${accountAddress}' to the url
+  - the chain id - add ${chainId} to the url
+- Example - "https://revoke.cash/address/${accountAddress}?chainId=${chainId}",
+
 ### PR
 - Make PR to this repo with your dApp data to corresponding .json file [Gnosis Safe App](/src/catalogs/wallet-gnosis.applist.json) / [WalletConnect](/src/catalogs/wallet-walletconnect.applist.json) in the following format:
 
