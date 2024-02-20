@@ -103,6 +103,23 @@
         "web",
         "mobile"
       ]
+    },
+    {
+      "id": "Everstake",
+      "url": "https://safe-eth.everstake.one/",
+      "name": "0.1+ ETH Staking by Everstake",
+      "iconUrl": "https://everstake.one/logo/logo-small-black.svg",
+      "description": "Stake your Ethereum with as little as 0.1 ETH.",
+      "networks": [
+        1
+      ],
+      "providedBy": {
+        "name": "Everstake",
+        "url": "https://everstake.one/"
+      },
+      "applicationType": [
+        "web"
+      ]
     }
   ]
 }
