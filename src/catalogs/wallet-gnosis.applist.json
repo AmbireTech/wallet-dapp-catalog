@@ -103,6 +103,28 @@
         "web",
         "mobile"
       ]
+    },
+    {
+      "id": "Snapshot",
+      "url": "https://snapshot.org/",
+      "name": "Snapshot",
+      "iconUrl": "https://snapshot.org/icon.svg",
+      "description": "Where decisions get made",
+      "networks": [
+        1,
+        10,
+        56,
+        100,
+        137,
+        250,
+        42161,
+        43114
+      ],
+      "forceInternal": true,
+      "applicationType": [
+        "web",
+        "mobile"
+      ]
     }
   ]
 }
